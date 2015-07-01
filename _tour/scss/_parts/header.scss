@@ -1,0 +1,157 @@
+header {
+	height: 100%;
+}
+
+
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.hero {
+	position: relative;
+	height: 91.1%;
+	width: 100%;
+	background-image: url(../img/img-header.jpg);
+	background-size: cover;
+}
+
+	.logo {
+		padding-top: 60px;
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+	}
+
+	.hero .text {
+		position: absolute;
+		top: 48%;
+		left: 0;
+		right: 0;
+		-webkit-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		text-align: center;
+		color: $white;
+		font-family: proxima;
+	}
+
+	h1 {
+		font-size: 59px;
+		font-weight: 400;
+	}
+
+	h4 {
+		width: 100%;
+		max-width: 575px;
+		margin: 0 auto;
+		padding-top: 23px;
+		font-size: 19px;
+		line-height: 25px;
+		font-weight: 400;
+		font-style: italic;
+	}
+
+	.action-text {
+		position: absolute;
+		bottom: 75px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+		color: $white;
+
+			.icon-mouse {
+				position: relative;
+				// @include size(30, 53);
+				margin: 0 auto 7px;
+
+					&:before {
+						position: static;
+						font-size: 53px;
+					}
+			}
+
+			span {
+				text-align: center;
+				font-family: proxima;
+				font-size: 14px;
+				font-weight: 300;
+				letter-spacing: 1.1px;
+				text-transform: uppercase;
+			}
+	}
+
+
+/* ========================================================================== */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   BENEFITS
+   ========================================================================== */
+
+.benefits {
+	height: 120px;	
+	width: 100%;
+	border-bottom: 2px solid $divider;
+	box-sizing: border-box;
+
+		.wrap {
+			width: 100%;
+			// max-width: 993px;
+			// max-width: 70%;
+			height: 100%;
+			margin: 0 auto;
+
+				>div {
+					width: 33.333%;
+					height: 100%;
+					float: left;
+					border-left: 2px solid $divider;
+					text-align: center;
+					color: $grey-mid;
+					box-sizing: border-box;
+
+						> div {
+							position: relative;
+							top: 50%;
+							-webkit-transform: translateY(-50%);
+							-o-transform: translateY(-50%);
+							transform: translateY(-50%);
+
+								div {
+									@include size(31);
+									margin: 0 auto;
+									padding-bottom: 13px;
+									font-size: 31px;
+								}
+
+									.icon-loanrange:before {
+										// @include size(31);
+										font-size: 35px;
+										left: -2px;
+										top: -3px;
+									}
+
+								span {
+									font-size: 17px;
+									font-weight: 600;
+									text-transform: uppercase;
+								}
+						}
+				}
+
+				>div:nth-child(3) {
+					border-right: 2px solid $divider;
+				}
+		}
+}
+
+/* ========================================================================== */

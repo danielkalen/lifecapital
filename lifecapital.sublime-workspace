@@ -1,0 +1,1097 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trans",
+				"translate3d"
+			],
+			[
+				"stories-",
+				"stories-list-item-content-title"
+			],
+			[
+				"stories",
+				"stories-list-item-content-text"
+			],
+			[
+				"stor",
+				"stories-list-item-content-text"
+			],
+			[
+				"stories-list",
+				"stories-list-item-content"
+			],
+			[
+				"intro",
+				"intro-benefits-content-list"
+			],
+			[
+				"bene",
+				"benefits-item"
+			],
+			[
+				"is",
+				"isDragging"
+			],
+			[
+				"sales",
+				"salesNum"
+			],
+			[
+				"frite",
+				"fwrite"
+			],
+			[
+				"sub",
+				"submission_count"
+			],
+			[
+				"su",
+				"submission_count"
+			],
+			[
+				"list",
+				"list-d	list-style-type: disc;"
+			],
+			[
+				"out",
+				"output_name"
+			],
+			[
+				"div",
+				"divide-buttons"
+			],
+			[
+				"make",
+				"makeReadyFinal"
+			],
+			[
+				"makre",
+				"makeReadyOwner"
+			],
+			[
+				"makr",
+				"makeReadyApply"
+			],
+			[
+				"error",
+				"error-show"
+			],
+			[
+				"erro",
+				"error-show"
+			],
+			[
+				"windo",
+				"windowScroll"
+			],
+			[
+				"form",
+				"formHeight"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"sale",
+				"salesEmpty"
+			],
+			[
+				"vol",
+				"volumeEmpty"
+			],
+			[
+				"months",
+				"monthsEmpty"
+			],
+			[
+				"volume",
+				"volumeNum"
+			],
+			[
+				"grye",
+				"grey-mid"
+			],
+			[
+				"cal",
+				"calculateText"
+			],
+			[
+				"volu",
+				"volumeNum"
+			],
+			[
+				"primary",
+				"primary-color"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"imp",
+				"@import	@import url(${0});"
+			],
+			[
+				"grey-light",
+				"grey-x-light"
+			],
+			[
+				"cho",
+				"choice-checkbox"
+			],
+			[
+				"window",
+				"windowHeightTrue"
+			],
+			[
+				"fst",
+				"fst-n	font-stretch: normal;"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"left",
+				"leftDistance"
+			],
+			[
+				"a",
+				"add"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"get_template",
+				"get_template_directory_uri"
+			],
+			[
+				"min",
+				"min"
+			],
+			[
+				"top",
+				"text-top"
+			],
+			[
+				"get_templa",
+				"get_template_directory_uri"
+			],
+			[
+				"com",
+				"com"
+			],
+			[
+				"inline",
+				"inline"
+			],
+			[
+				"false",
+				"false"
+			],
+			[
+				"ti",
+				"ti--	text-indent: -9999px;"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"add",
+				"addClass"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "jade/_parts-home/section-stories.jade",
+			"settings":
+			{
+				"buffer_size": 4295,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_parts-home/section-stories-modal.sass",
+			"settings":
+			{
+				"buffer_size": 2270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/_parts-home/home-stories.js",
+			"settings":
+			{
+				"buffer_size": 988,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/application.php",
+			"settings":
+			{
+				"buffer_size": 12452,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ex",
+				"ExpandRegion"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/lifecapital",
+		"/Applications/MAMP/lifecapital/php"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/lifecapital/js/main.js",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-stories.sass",
+		"/Applications/MAMP/lifecapital/sass/style.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-team.sass",
+		"/Applications/MAMP/lifecapital/jade/_parts-home/section-intro.jade",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-intro.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-how.sass",
+		"/Applications/MAMP/lifecapital/jade/_parts-home/header-home.jade",
+		"/Applications/MAMP/lifecapital/sass/_parts/header.sass",
+		"/Applications/MAMP/lifecapital/sass/home.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/home-header.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts/_vars.sass",
+		"/Applications/MAMP/lifecapital/js/_parts-home/home-hero_height.js",
+		"/Applications/MAMP/lifecapital/js/_parts-form/form.js",
+		"/Applications/MAMP/lifecapital/index_uncombined.html",
+		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/js/global.js",
+		"/Applications/MAMP/lifecapital/jade/_parts-policy/header-privacy.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-home/section-stories.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-policy/policy-privacy.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-global/takana.jade",
+		"/Applications/MAMP/lifecapital/js/_plugins/jquery.nouislider.all.min.js",
+		"/Applications/MAMP/lifecapital/jade/home.jade",
+		"/Applications/MAMP/lifecapital/jade/terms.jade",
+		"/Applications/MAMP/lifecapital/jade/policy.jade",
+		"/Applications/MAMP/lifecapital/js/_parts-home/home-stories.js",
+		"/Applications/MAMP/lifecapital/js/_parts-form",
+		"/Applications/MAMP/lifecapital/js/_parts-home",
+		"/Applications/MAMP/lifecapital/js/_parts-global",
+		"/Applications/MAMP/lifecapital/sass/_parts-form/form.sass",
+		"/Applications/MAMP/lifecapital/sass/main.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-cta.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts/success.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-form",
+		"/Applications/MAMP/lifecapital/jade/_parts-policy/header-terms.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-home/section-team.jade",
+		"/Applications/MAMP/lifecapital/jade/section-team.jade",
+		"/Applications/MAMP/lifecapital/jade/header-home.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-policy/policy-terms.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-global/header.jade",
+		"/Applications/MAMP/lifecapital/policy.html",
+		"/Applications/MAMP/lifecapital/index.html",
+		"/Applications/MAMP/lifecapital/index.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-global",
+		"/Applications/MAMP/lifecapital/jade/footer.jade",
+		"/Applications/MAMP/lifecapital/jade/section-how.jade",
+		"/Applications/MAMP/lifecapital/index_unminified.html",
+		"/Applications/MAMP/lifecapital/jade/section-form.jade",
+		"/Applications/MAMP/lifecapital/jade/section-stories.jade",
+		"/Applications/MAMP/lifecapital/jade/section-intro.jade",
+		"/Applications/MAMP/dovflex/index.jade",
+		"/Applications/MAMP/lifecapital/sass/_parts/footer.sass",
+		"/Applications/MAMP/bwd/wp-content/themes/bwd_theme/sass/_parts/_vars.sass",
+		"/Applications/MAMP/lifecapital/scss/_parts/range.scss",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/7DCD5D4D-8E24-4B26-9E76-EC72C6135C6C/wp-trackback.php",
+		"/Applications/MAMP/lifecapital/php/test/secret.php",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/8BB55E37-4DB4-4F92-AC39-B40E4AC20AA0/count.php",
+		"/Applications/MAMP/lifecapital/php/application.php",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/7C804526-653D-4FF6-860D-8DFB65188676/application.php",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/4E49A0DA-B5BC-43B5-9765-9AB3DE227753/pdftk.php",
+		"/Applications/MAMP/lifecapital/.htaccess",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/E8AE5ECD-C0A7-43D3-8888-F467B012B754/.htaccess",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/65974B84-1F3D-42FB-A2E9-D48C8FF0E754/.htaccess",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/1F326645-A30F-474B-B564-4DF9CA21E16E/.htaccess",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/CF42C232-51FA-4998-B22D-DC7D6E604536/.htaccess",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/48CE08D2-5C72-4EA1-9BF8-108C44A033F8/.htaccess",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/09ADC1BD-81AE-4CC5-9DE1-37A7C46EE95D/.htaccess",
+		"/Applications/MAMP/lifecapital/css/style.css",
+		"/Applications/MAMP/lifecapital/scss/main.scss",
+		"/Applications/MAMP/lifecapital/scss/policy-page.scss",
+		"/Applications/MAMP/lifecapital/terms.html",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/91EFE66E-3700-4730-8B4D-A3816879B6F9/.htaccess",
+		"/Applications/MAMP/lifecapital/index_combined.html",
+		"/Applications/MAMP/lifecapital/js/_combined.js",
+		"/Applications/MAMP/lifecapital/js/_combined.min.js",
+		"/Applications/MAMP/lifecapital/js/main.min.js",
+		"/Applications/MAMP/lifecapital/scss/_parts/footer.scss",
+		"/Applications/MAMP/lifecapital/scss/_parts/_vars.scss",
+		"/Applications/MAMP/lifecapital/php/call_application.php",
+		"/Applications/MAMP/lifecapital/php/test/fields1.txt",
+		"/Applications/MAMP/lifecapital/php/test/which.txt",
+		"/Applications/MAMP/lifecapital/php/test/pwd.txt",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/E0601358-C4E9-4510-8FE5-E21746EB3A4E/scripts.js",
+		"/Applications/MAMP/lifecapital/scss/icons.scss",
+		"/Users/gazelle/Downloads/lccons-social/styles.css",
+		"/Applications/MAMP/lifecapital/scss/fonts.scss",
+		"/Applications/MAMP/lifecapital/scss/_parts/animation.scss",
+		"/Applications/MAMP/lifecapital/php/signature.class.php",
+		"/Applications/MAMP/lifecapital/scss/_parts/header.scss",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/854DCDD5-3B30-4BA1-A4B6-AA86F689DED9/scripts.js",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/CA922D68-CE33-4708-8B96-1393754D5A5D/.bash_profile",
+		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/gv_sky.info",
+		"/Applications/MAMP/getvoip/gv_main/sites/all/modules/_GV/gv_blocks/gv_blocks.module",
+		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/templates/node--our_team.tpl.php",
+		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/templates/page.tpl.php",
+		"/Applications/MAMP/getvoip/gv_main/sites/all/modules/_GV/gv_blocks/gv_blocks.info",
+		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/template.php",
+		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/templates/page--compare_providers.tpl.php",
+		"/Applications/MAMP/lifecapital/index_combines.html",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/E0D4DD49-312D-4307-AEBB-D71C552919E0/call_application.php",
+		"/Applications/MAMP/lifecapital/php/count.txt",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/B0A9CE8D-54D6-4FCA-B877-E2A2998260C1/application.php",
+		"/Applications/MAMP/lifecapital/php/test/count.php",
+		"/Users/gazelle/Documents/Resources/_Web/Themes/The7.Responsive.Multi-Purpose.WordPress.Theme.v4.3.0.1/dt-the7/comments.php",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/A1F6C6E8-DD17-42CA-BBE0-1F51C729BB1C/.htaccess",
+		"/Applications/MAMP/privatebarber/wp-content/themes/privatebarber/sass/site/secondary/sweetalert.scss",
+		"/Applications/MAMP/lifecapital/scss/_parts/success.scss",
+		"/Users/gazelle/Documents/Resources/_Web/Development tools/Popup:notify effects/sweetalert-master/lib/sweet-alert.js",
+		"/Applications/MAMP/lifecapital/scss/style.scss",
+		"/Applications/MAMP/lifecapital/index_uncombined-js.html",
+		"/Applications/MAMP/lifecapital/js/TweenMax.min.js",
+		"/Applications/MAMP/lifecapital/css/policy-page.css",
+		"/Applications/MAMP/lifecapital/scss/temp.scss",
+		"/Applications/MAMP/getvoip/gv_main/ab.htaccess",
+		"/Users/gazelle/Downloads/drupal-7.34/abc.htaccess",
+		"/Applications/MAMP/getvoip/gv_main/includes/file.inc",
+		"/Applications/MAMP/getvoip/gv_main/a.htaccess",
+		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_blue/templates/page.tpl.php",
+		"/private/etc/hosts",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/8DDEF60D-D1DC-4654-BFB6-106BF3F5BB9D/fields1.txt",
+		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/50F3C9EF-3840-473A-BCB9-295E120A7F4E/pdftk.php",
+		"/Applications/MAMP/lifecapital/php/test/pdftk.php",
+		"/Applications/MAMP/lifecapital/php/template.fdf",
+		"/Applications/MAMP/lifecapital/php/fields.txt",
+		"/var/folders/hq/44ng764501q09d5v101_v23h0000gp/T/com.apple.iChat/Messages/Transfers/IMG_8792.jpeg",
+		"/Users/gazelle/Downloads/_Archives/sign-on-display-2012-10-06/example.php",
+		"/Applications/MAMP/lifecapital/scss/_parts/modal.scss",
+		"/Applications/MAMP/lifecapital/php/PHPMailer-master/test/test_callback.php",
+		"/Applications/MAMP/getvoip/getvoip_conf/js/main.js"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			"<open folders>",
+			"/Applications/MAMP/shopperbarn/wp-content/plugins/woocommerce",
+			"<open folders>",
+			"/Applications/MAMP/snapmagnet/wp-content/plugins/gravityforms",
+			"/Applications/MAMP/snapmagnet/wp-content/plugins/gravityforms/js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"field_values",
+			"strip_tags",
+			" = $_POST",
+			"evt",
+			"$('body')",
+			"$$('body'",
+			"$('body')",
+			".removeClass('hide')",
+			".addClass('hide');",
+			"md-show",
+			".md-modal",
+			".story",
+			"d-overlay",
+			"article",
+			"| See how ",
+			".story-overlay",
+			"story-img",
+			".story-img",
+			".story.",
+			"title",
+			"+m(",
+			"100px",
+			"rc_1",
+			"$underwriter",
+			"$account",
+			"Text = $",
+			"Text, ",
+			"svgLine",
+			"setTween",
+			"tween20",
+			"tween19",
+			"tween18",
+			"tween17",
+			"tween16",
+			"Text = new",
+			".addTo(controller)",
+			"var",
+			"$text",
+			"Text = 	new T",
+			"new TweenMa",
+			"TweenMax.to($",
+			"var",
+			"scene13",
+			"scene2",
+			"TeenMax",
+			"new TimelineMax()",
+			"coinsSVG",
+			"margin",
+			"!important",
+			"),",
+			"$$",
+			"$(\".intro-benefits",
+			"$tex",
+			"#line-cir",
+			"line-circ",
+			"irc_",
+			"-circ_dash",
+			"#line-",
+			"line-1",
+			"noanimate",
+			"stroke-miterlimit:10;",
+			"#svg-",
+			"svg-line",
+			"svg-",
+			"circleSix",
+			"circleFive",
+			"circleFour",
+			"circleThree",
+			"circleTwo",
+			"circleOne",
+			"circleTwo",
+			"circleOne",
+			"svgLine",
+			"circleTwo",
+			"circleOne",
+			"icon-",
+			"style='',",
+			"fill:none;",
+			"stroke-linecap:round",
+			"stroke-linejoin:round;",
+			"stroke-miterlimit:1;",
+			"stroke-width",
+			".svg-container",
+			".possible-list-item",
+			"list",
+			".list-subtitle",
+			".list-",
+			".svg-coins",
+			"+m(",
+			"margin: 0 auto",
+			"important",
+			"+max",
+			"max",
+			"media",
+			"$('.he",
+			";",
+			"var ",
+			"$window",
+			"Café",
+			"’",
+			"wnumb",
+			"_parts/",
+			"privacy",
+			"Privacy Policy",
+			"home",
+			"/jade",
+			"jade",
+			"Funding Solutions",
+			"8495",
+			"The Ultimate All-in-one Fitness Device - DovFlex",
+			"clearfix-dk",
+			"/* \n *",
+			" * ==========================================================================",
+			"/* ==========================================================================\n\n",
+			"/* ==========================================================================",
+			"+clearfix-dk",
+			"scss",
+			":",
+			"Feb",
+			"scss",
+			"../",
+			"style=\"",
+			"monthly",
+			"40",
+			"200",
+			"25",
+			"118",
+			"195"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$primary-color"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "jade/_parts-home/section-stories.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1057,
+								1057
+							],
+							[
+								2432,
+								2432
+							],
+							[
+								3871,
+								3871
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"expand_region_settings": "{\"hash\": \"e19dfe651779d6665ca0190dfb0b42a9\", \"stack\": [{\"end\": 3874, \"start\": 3869}]}",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sass/_parts-home/section-stories-modal.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/_parts-home/home-stories.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"expand_region_settings": "{\"hash\": \"34c865e21b31e070e019174e6f962021\", \"stack\": [{\"end\": 742, \"start\": 737}]}",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "php/application.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10714,
+								10714
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"expand_region_settings": "{\"hash\": \"800e04eeb0d78765ac9f29119daf8d29\", \"stack\": [{\"end\": 2521, \"start\": 2514}]}",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lifecapital.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/MAMP/getvoip/getvoip_wifi/gv_wifi.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 152.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

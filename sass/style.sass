@@ -1,0 +1,54 @@
+@import _parts/_vars
+@import _parts/normalize
+@import _parts/icons
+@import _parts/fonts
+@import _parts/animations
+@import _parts/header
+@import _parts/footer
+
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+html, body, #page
+  height: 100%
+
+body
+  font-family: proxima
+  width: 100%
+  overflow-x: hidden
+
+section
+  background-color: $subberwhite
+
+h2
+  font-size: 43px
+  font-weight: 300
+  text-align: center
+  color: $primary
+  +max(760)
+    max-width: 500px
+    +center
+    padding-top: 110px !important
+    font-size: 38px !important
+
+// h3
+//   font-size: 29px
+//   font-weight: 400
+//   color: $primary
+
+// h5
+//   font-size: 18px
+//   font-weight: 400
+//   color: $grey-light
+
+// .subtitle
+//   text-align: center
+//   width: 85%
+//   max-width: 425px
+//   +center
+//   padding-top: 8px
+//   font-size: 18px
+//   font-weight: 400
+//   color: $grey

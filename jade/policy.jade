@@ -1,0 +1,33 @@
+doctype html
+html(class='no-js', lang='en-US', itemscope='', itemtype='http://schema.org/WebPage', dir='ltr', prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
+    head
+        //- meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=0')
+        //- Begin Meta Data
+        //- <link rel="canonical" href="http://getvoip.com/service-quotes">
+        //- <meta property="og:url" content="http://getvoip.com/service-quotes">
+        //- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <meta property="og:title" content="Life Capital - Privacy Policy">
+        <meta property="fb:admins" content="http://www.facebook.com/mylifecapital">
+        <meta itemprop="name" content="Life Capital - Privacy Policy">
+        //- End Meta data.
+        title Life Capital - Privacy Policy
+        link(rel='stylesheet', href='css/policy-page.css', type='text/css')
+
+        include ./_parts-global/takana.jade
+    body
+        #page
+            .md-overlay
+            include ./_parts-policy/header-privacy.jade
+
+            main.main(role='main')
+
+                include ./_parts-policy/policy-privacy.jade
+
+            include ./_parts-global/footer.jade
+
+
+
+        //- script(type='text/javascript', src='js/jquery.min.js')
+        //- script(type='text/javascript', src='js/_combined.min.js')
+        script(type='text/javascript', src='js/main.min.js')

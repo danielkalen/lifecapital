@@ -1,0 +1,262 @@
+header {
+	position: relative;
+	height: 100%;
+	background-color: $subberwhite;
+	overflow: visible;
+
+	@media screen and (max-height:580px) {
+		height: 600px;
+	}
+	@media screen and (max-width:760px) {
+		height: 890px;
+	}
+	@media screen and (max-width:580px) {
+		height: 920px;
+	}
+}
+
+
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+
+.hero {
+	position: relative;
+	height: 91%;
+	width: 100%;
+	background-image: url(../img/img-header.jpg);
+	background-size: cover;
+
+	@media screen and (max-height:768px) {
+		height: 86.5% !important;
+	}
+
+	@media screen and (max-width:760px) {
+		height: 100% !important;
+		background-position: 17% 0%;
+	}
+}
+
+	.logo {
+		padding-top: 60px;
+			img {
+				display: block;
+				margin: 0 auto;
+
+				@media screen and (max-width:460px) {
+					@include size(140);
+				}
+			}
+	}
+
+	.hero .text {
+		position: absolute;
+		top: 48%;
+		left: 0;
+		right: 0;
+		-webkit-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		text-align: center;
+		color: $white;
+		font-family: proxima;
+
+			@media screen and (max-width:1440px) {
+				top: 52%;
+			}
+			@media screen and (max-height:768px) {
+				top: 58%;
+			}
+			@media screen and (max-height:700px) {
+				top: 64%;
+			}
+			@media screen and (max-width:760px) {
+				top: 370px;
+			}
+	}
+
+	h1 {
+		width: 90%;
+		margin: 0 auto;
+		font-size: 59px;
+		font-weight: 400;
+
+		@media screen and (max-width:760px) {
+			font-size: 7.7vw;
+		}
+		@media screen and (max-width:580px) {
+			width: 67%;
+			min-width: 300px;
+			font-size: 42px;
+			line-height: 46px;
+		}
+
+	}
+
+	h4 {
+		position: relative;
+		width: 90%;
+		max-width: 545px;
+		margin: 0 auto;
+		padding-top: 23px;
+		font-size: 19px;
+		line-height: 25px;
+		font-weight: 400;
+		font-style: italic;
+
+		@media screen and (max-width:580px) {
+			width: 80%;
+			font-size: 17px;
+		}
+	}
+
+	.action-text {
+		position: absolute;
+		bottom: 75px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		text-align: center;
+		color: $white;
+
+		@media screen and (max-height:768px) {
+			bottom: 8%;
+		}
+		@media screen and (max-height:700px), screen and (max-width:760px) {
+			display: none;
+		}
+
+			.icon-mouse {
+				position: relative;
+				margin: 0 auto 7px;
+
+					&:before {
+						position: static;
+						font-size: 53px;
+					}
+			}
+
+			span {
+				text-align: center;
+				font-family: proxima;
+				font-size: 14px;
+				font-weight: 300;
+				letter-spacing: 1.1px;
+				text-transform: uppercase;
+			}
+	}
+
+
+/* ========================================================================== */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   BENEFITS
+   ========================================================================== */
+
+.benefits {
+	height: 120px;	
+	width: 100%;
+	background-color: $white;
+	border-bottom: 2px solid $divider;
+	box-sizing: border-box;
+
+	@media screen and (max-height:768px) {
+		height: 13.6%;
+	}
+
+	@media screen and (max-width:760px) {
+		position: absolute;
+		bottom: 5%;
+		height: auto;
+		border: 0;
+		background-color: transparent;
+	}
+
+		.wrap {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+
+				>div {
+					width: 33.333%;
+					height: 100%;
+					float: left;
+					border-left: 2px solid $divider;
+					text-align: center;
+					color: $grey-mid;
+					box-sizing: border-box;
+
+					@media screen and (max-width:760px) {
+						float: none;
+						width: 90%;
+						padding: 20px 0 25px;
+						margin: 0 auto;
+						border: 0;
+						color: $white;
+
+							> div {		//	Benefit Wrapper
+								top:0% !important;
+								-webkit-transform: translateY(0%) !important;
+								-o-transform: translateY(0%) !important;
+								transform: translateY(0%) !important;
+
+									div {
+										padding-bottom: 15px !important;
+									}
+							}
+					}
+
+						> div {		//	Benefit Wrapper
+							position: relative;
+							top: 50%;
+							-webkit-transform: translateY(-50%);
+							-o-transform: translateY(-50%);
+							transform: translateY(-50%);
+							width: 92%;
+							margin: 0 auto;
+
+								div {		// Icon
+									@include size(31);
+									margin: 0 auto;
+									padding-bottom: 13px;
+									font-size: 31px;
+
+									@media screen and (max-height:768px) {
+										padding-bottom: 9px;
+									}
+								}
+
+									.icon-loanrange:before {
+										// @include size(31);
+										font-size: 35px;
+										left: -2px;
+										top: -3px;
+									}
+
+								span {		// Text
+									font-size: 17px;
+									font-weight: 600;
+									text-transform: uppercase;
+
+									@media screen and (max-height:768px) {
+										font-size: 16px;
+									}
+								}
+						}
+				}
+
+				>div:nth-child(1) {
+					border-left: 0;
+				}
+		}
+}
+
+/* ========================================================================== */

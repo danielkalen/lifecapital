@@ -1,0 +1,1606 @@
+@import '_parts/_vars.scss';
+@import '_parts/header.scss';
+@import '_parts/footer.scss';
+@import '_parts/range';
+@import '_parts/success';
+
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+html, body, #page {
+	height: 100%;
+}
+
+body {
+	font-family: proxima;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+section {
+	background-color: $subberwhite;
+}
+
+h2 {
+	font-size: 43px;
+	font-weight: 300;
+	text-align: center;
+	color: $primary;
+
+	@include m(760) {
+		max-width: 500px;
+		@include center();
+		padding-top: 110px !important;
+		font-size: 38px !important;
+	}
+
+		&.mini {
+			font-size: 40px;
+		}
+}
+
+h3 {
+	font-size: 29px;
+	font-weight: 400;
+	color: $primary;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 400;
+	color: $grey-light;
+}
+
+.subtitle {
+	text-align: center;
+	width: 85%;
+	max-width: 425px;
+	@include center();
+	padding-top: 8px;
+	font-size: 18px;
+	font-weight: 400;
+	color: $grey;
+}
+
+/* ========================================================================== */
+
+
+
+
+
+
+/* ==========================================================================
+   1.Section ONE
+   ========================================================================== */
+
+// .section-one {
+
+		.title-wrap {
+			display: block;
+			position: relative;
+		}
+	
+		.first-title {
+			padding-top: 152px;
+			width: 90%;
+			@include center();
+		}
+
+		.first-subtitle {
+			max-width: 538px;
+			@include center();
+			padding-top: 17px;
+			font-size: 18px;
+			text-align: center;
+			color: $grey;
+		}
+
+		.list-svg-wrap {		// Wrap Container of SVG + List
+			width: 100%;
+			padding: 160px 20px 0 ;
+			box-sizing: border-box;
+			@include clearfix-dk();
+
+			@include m(920) {
+				padding: 110px 20px 0;
+			}
+
+		}
+				.svg-coins,
+				.possible {			// Svg Container + List container
+					width: 50%;
+					float: left;
+				}
+
+
+				.svg-coins {
+
+						#svg-coins{
+							position: relative;
+							top: 0;
+							float: right;
+							padding-right: 25%;
+						}
+
+					@include m(1140) {
+						width: 40%;
+
+							#svg-coins {
+								padding-right: 20%;
+							}
+					}
+
+					@include m(920) {
+						width: 34%;
+						@include transform(scale(.85));
+
+							#svg-coins {
+								padding-right: 12%;
+							}
+					}
+
+					@include m(840) {
+						display: none;
+					}
+
+				}
+
+
+					.actual-list {
+						position: relative;
+					}
+
+
+				.possible {   // List Container
+
+					@include m(1140) {
+						width: 60%;
+					}
+
+					@include m(920) {
+						width: 66%;
+					}
+
+					@include m(840) {
+						width: 100%;
+
+							.list-title, 
+							.list-subtitle {
+								text-align: center;
+							}
+
+							.possible-wrap {
+								width: 100%;
+								max-width: 538px;
+								@include center();
+
+							}
+
+					}
+
+					@include m(580) {
+
+								.list-title, 
+								.list-subtitle {
+									max-width: 370px;
+									@include center();
+								}
+
+								.list-title {
+									padding-bottom: 10px;
+								}
+						
+								.actual-list {
+									width: 90%;
+									@include center();
+								}
+					}
+
+				}
+						
+						.list-subtitle {
+							padding-bottom: 22px;
+						}
+
+						.svg-line {
+							position: absolute;
+							top: 0;
+							left: 0;
+
+								.noanimate {
+									stroke-dashoffset: 0 !important;
+								}
+						}
+
+
+								.possible-list-item {
+									height: 42px;
+									padding-top: 32px;
+
+									&.first {
+										padding-top: 0;
+									}
+
+								}
+										.svg-container {		// SVG Container
+											position: absolute;
+											@include size(42);
+											left: 2px;
+
+												svg {
+													position: absolute;
+													top: 50%;
+													-webkit-transform: translateY(-50%);
+													-o-transform: translateY(-50%);
+													transform: translateY(-50%);
+													left: 0;
+													right: 0;
+													@include center();
+													overflow: visible;
+												}
+										}
+
+												#icon-inventory *,
+												#icon-debt *,
+												#icon-cashflow *,
+												#icon-expand * {
+													stroke-width:1.4 !important;
+												}
+
+												#icon-improve * {
+													stroke-width:1.8 !important;
+												}
+
+										.possible-list-item-text {
+											position: relative;
+											top: 52%;
+											-webkit-transform: translateY(-50%);
+											-o-transform: translateY(-50%);
+											transform: translateY(-50%);
+											padding-left: 58px;
+											font-size: 16px;
+											color: $grey-middle;
+											font-weight: 400;
+										}
+
+// }
+
+/* ========================================================================== */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   2.Section Two
+   ========================================================================== */
+
+h2.mini {
+	padding: 150px 0 63px;
+
+	@include m(920) {
+		width: 90%;
+		max-width: 600px;
+		@include center();	
+		padding: 110px 0 40px;
+	}
+}
+
+.section-two {
+	padding: 0 0 133px;
+} 
+		.stories {
+			width: 100%;
+			padding: 0 30px;
+			@include clearfix-dk();
+			box-sizing: border-box;
+		}
+
+			.story {
+				position: relative;
+				float: left;
+				width: perc(410, 1410);
+				margin-left: 2.11%;
+				margin-right: 2.11%;
+				cursor: pointer;
+
+				@include m(920) {
+					@include center(0, 7%);
+					float: none;
+					width: 90%;
+					max-width: 426px;
+
+					&.rue {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+					.story-img {
+						width: 100%;
+						transition: all 0.35s;
+					}
+
+					.story-overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 99%;
+						background-color: rgba(0,0,0,.42);
+						color: #fff;
+						transition:background-color 0.35s;
+
+					}
+
+							.story-title {
+								padding: 0 30px 0;
+								position: relative;
+								top: 50%;
+								-webkit-transform: translateY(-50%);
+								-o-transform: translateY(-50%);
+								transform: translateY(-50%);
+								font-size: 24px;
+								font-weight: 300;
+								text-transform: uppercase;
+								text-align: center;
+
+								@include m(920,min) {
+									font-size: 1.78vw;
+								}
+
+								@include m(490) {
+									font-size: 4.5vw;
+								}
+
+								@include m(340) {
+									font-size: 20px;
+								}
+
+									span {
+										font-weight: 700;
+									}
+							}
+
+							.story-peek {
+								position: absolute;
+								left: 0;
+								right: 0;
+								@include center();
+								width: 75%;
+								max-width: 286px;
+								top: 53%;
+								font-size: 15px;
+								font-weight: 400;
+								text-align: center;
+
+									span {
+										font-weight: 700;
+									}
+
+								@include m(1380,min) {
+									font-size: 1.1vw;
+									max-width: 70%;
+								}
+
+								@include m(340) {
+									font-size: 13px;
+								}
+							}
+
+
+			.story:hover {
+
+					.story-overlay {
+						background-color: rgba(6,64,97,.75);
+					}
+
+					.story-img {
+					    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+					    filter: gray;
+					    -webkit-filter: grayscale(100%);
+					}
+
+			}
+
+
+
+
+.story .story-overlay::before,
+.story .story-overlay::after {
+	position: absolute;
+	top: 23px;
+	right: 23px;
+	bottom: 23px;
+	left: 23px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+	.story .story-overlay::before {
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		-webkit-transform: scale(0,1);
+		transform: scale(0,1);
+	}
+
+	.story .story-overlay::after {
+		border-right: 1px solid #fff;
+		border-left: 1px solid #fff;
+		-webkit-transform: scale(1,0);
+		transform: scale(1,0);
+	}
+
+.story .story-title {
+	-webkit-transition: top 0.35s;
+	transition: top 0.35s;
+}
+
+.story .story-peek {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,30px,0);
+	transform: translate3d(0,30px,0);
+}
+
+.story:hover .story-overlay::before,
+.story:hover .story-overlay::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.story:hover .story-title {
+	opacity: 1;
+	top: 45% !important;
+
+	@media screen and (max-width:1120px) and (min-width:920px), screen and (max-width:340px) {
+		top: 38% !important;
+	}
+}
+.story:hover .story-peek {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@import '_parts/modal';
+
+
+/* ========================================================================== */
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   3.Section Three
+   ========================================================================== */
+
+.section-three {
+	background-color: $white;
+	border-top: 1px solid $border;
+}
+
+		h2 {
+			padding-top: 128px;
+		}
+
+		.team-member {
+			width: 100%;
+			max-width: 820px;
+			@include center();
+			padding-top: 140px;
+
+		}
+
+				.team-member-wrap {
+					@include clearfix-dk();
+
+					@include m(820) {
+						padding: 0 15px;
+					}
+				}
+
+						.team-svg-container {
+							float: left;
+						}
+
+						.member-desc {
+							float: right;
+							width: 60%;
+							max-width: 480px;
+						}
+
+								.member-list-wrap {
+									padding-top: 10px;
+
+										li {
+											padding-top: 20px;
+											font-size: 16px;
+											font-weight: 400;
+											color: $grey;
+
+											&:nth-child(1) {
+												padding-top: 0;
+											}
+										}
+
+								}
+
+
+
+		.underwriter {
+			padding-bottom: 170px;
+
+			@include m(920) {
+				padding-bottom: 100px;
+			}
+
+			.team-svg-container {
+				float: right;
+			}
+
+			.member-desc {
+				float: left;
+			}
+		}
+
+		.svg-account {
+			position: relative;
+			top: -10px;
+		}
+
+
+	
+		@include m(760) {
+		
+
+			.team-member-wrap.team-member-wrap { 	// Remove float on mobile
+				>div {
+					float: none;
+					@include center();
+				}
+			}
+
+				.team-svg-container.team-svg-container.team-svg-container {
+					width: 225px;
+					@include center(0,20px);
+					@include transform(scale(0.9));
+				}
+
+				.member-desc {
+					width: 80%;
+					text-align: center;
+				}
+
+
+
+			.team-member {		// Removes excess padding on mobile
+				padding-top: 90px;
+			}
+
+		}
+
+
+
+/* ========================================================================== */
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   4.Section Four
+   ========================================================================== */
+
+
+.section-four {
+	width: 100%;
+	height: 335px;
+	background-image: url(../img/img-office.jpg);
+	background-size: cover;
+	background-position: 50% 20%;
+	color: $white;
+
+	@include m(820) {
+		height: 400px;
+	}
+
+	@include m(580) {
+		height: 780px;
+	}
+
+}
+
+		.steps-section-wrap {
+			width: 100%;
+			max-width: 1650px;
+			height: 100%;
+			@include center();
+		}
+
+			.steps-section-title,
+			.steps {		//	Both Block
+				float: left;
+				height: 100%;
+
+				@include m(820) {
+					float: none;
+					height: auto;
+					@include center();
+				}
+			}
+
+			.steps-section-title {
+				width: 39%;
+				font-size: 56px;
+				font-weight: 400;
+				text-align: center;
+
+				@include m(920) {
+					width: 36%;
+					font-size: 50px;
+				}
+
+				@include m(820) {
+					width: 100%;
+					padding: 65px 0 110px;
+
+				}
+
+				@include m(580) {
+					padding: 65px 0 50px;
+				}
+
+					.steps-section-title-wrap {
+						display: block;
+						position: relative;
+						top: 50%;
+						-webkit-transform: translateY(-50%);
+						-o-transform: translateY(-50%);
+						transform: translateY(-50%);
+
+						@include m(820) {
+							@include unvalign();
+						}
+					}
+			}
+
+			.steps {
+				width: 58%;
+
+				@include m(920) {
+					width: 64%;
+				}
+
+				@include m(820) {
+					width: 90%;
+					padding-top: 10px;
+				}
+			}
+
+					.steps-wrap {
+						position: relative;
+						top: 55%;
+						-webkit-transform: translateY(-50%);
+						-o-transform: translateY(-50%);
+						transform: translateY(-50%);
+						text-align: center;
+						@include clearfix-dk();
+					}
+
+							.step-group {
+								float: left;
+								width: 33.333%;
+								position: relative;
+							}
+
+									.step-text {
+										font-size: 27px;
+										font-weight: 400;
+										padding-top: 31px;
+									}
+
+									.step-icon {
+										@include center();
+									}
+
+
+									.icon-apply {
+										@include size(83,88);
+
+											&:before {
+												font-size: 87px;
+											}
+									}
+
+									.icon-approve {
+										@include size(89,88);
+
+											&:before {
+												font-size: 89px;
+											}
+									}
+
+									.icon-fund {
+										@include size(90,88);
+
+											&:before {
+												top: -4px;
+												font-size: 94px;
+											}
+									}
+
+						@include m(920) {
+							.step-group {
+								opacity: 1 !important;
+								margin-top: 0 !important;
+							}
+
+							.step-text {
+								font-size: 25px;
+							}
+						}
+
+						@include m(580) {
+
+							.steps-wrap {
+								@include unvalign();
+							}
+
+								.step-group {
+									float: none;
+									width: 90%;
+									margin: 0 auto 50px !important;
+								}
+
+								.step-text {
+									font-size: 27px;
+									padding-top: 22px;
+								}
+						}
+			
+		
+
+
+
+
+/* ========================================================================== */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   5.Section Five
+   ========================================================================== */
+
+.section-five {
+	min-height: 1070px;
+	padding-bottom: 170px;
+
+	@include m(680) {
+		min-height: 900px;
+	}
+		
+		h2 {
+			padding-top: 145px;
+		}
+
+		.subtitle {
+			max-width: 380px;
+		}
+}
+
+form {
+	position: relative;
+	width: 90%;
+	max-width: 580px;
+	@include center(45px,0);
+	background-color: $white;
+	border: 1px solid $border;
+	border-radius: 3px;
+
+}
+
+		/* 
+		   STEPS
+		   ========================================================================== */
+		
+
+		.step {
+			padding: 0 68px;
+			overflow: hidden;
+
+			@include m(580) {
+				padding: 0 40px;
+			}
+
+			@include m(420) {
+				padding: 0 30px;
+			}
+
+
+		}
+
+		.step.one {
+			height: 688px;
+
+			@include m(580) {
+				height: 660px;
+			}
+		}
+
+		.step.two {
+
+			@include m(420) {
+				padding: 0 20px;
+			}
+
+				>p {
+					text-align: center;
+				}
+
+				.approval {
+					padding-top: 88px;
+					font-size: 28px;
+					font-weight: 300;
+					color: $grey-mid;
+				}
+
+				.number {
+					padding-top: 23px;
+					font-size: 43px;
+					font-weight: 300;
+					color: $contrast;
+				}
+
+				.length {
+					padding-top: 50px;
+					font-size: 20px;
+					font-weight: 400;
+					color: $grey-mid;
+				}
+
+
+		}
+
+		.step.two,
+		.step.three,
+		.step.four,
+		.step.success {
+			height: 0;
+		}
+
+		/* 
+		   Fieldsets (Global)
+		   ========================================================================== */
+
+			.fieldset {		// Global Fieldsets
+				width: 100%;
+				margin-top: 37px;
+
+					.wrap {
+						width: 100%;
+						position: relative;
+					}
+
+					.question {
+						font-size: 14px;
+						font-weight: 700;
+						text-transform: uppercase;
+						color: $grey-mid;
+						padding-bottom: 10px;
+
+							@include m(480) {
+								span {display: none}
+							}
+					}
+
+					@mixin field-style {
+						background-color: $subwhite;
+						border: 1px solid $border;
+						border-radius: 3px;
+						box-sizing: border-box;
+						color: $grey-mid;
+					}
+
+					input,
+					select, 
+					.choice {
+						@include field-style();
+						height: 55px;
+					}
+
+					textarea {
+						@include field-style();
+						height: 90px;
+						padding: 12px 15px;
+					}
+
+					select {
+						width: 100%;
+						padding: 15px;
+						cursor: pointer;
+					}
+
+					&.select .wrap {
+						cursor: pointer;
+
+							&:before {
+								content: 'l';
+								position: absolute;
+								top: 0;
+								right: 15px;
+								display: block;
+								width: 15px;
+								font-family: lccons;
+								color: $grey-mid;
+								font-size: 22px;
+								line-height: 55px;
+							}
+					}
+
+					&.file .wrap {
+						@include field-style();
+						height: 55px;
+
+							input {
+								position: relative;
+								top: 50%;
+								-webkit-transform: translateY(-50%);
+								-o-transform: translateY(-50%);
+								transform: translateY(-50%);
+								height: auto !important;
+								border: 0;
+							}
+					}
+			}
+
+			.step-title {
+				position: relative;
+				bottom: -20px;
+				padding-top: 18px;
+				font-size: 26px;
+				color: $primary;
+				text-align: center;
+
+				&.partner-title {
+					padding-top: 0;
+					bottom: -40px;
+
+					@include m(580) {
+						bottom: -25px;
+					}
+				}
+			}
+
+		/* 
+		   Buttons (global)
+		   ========================================================================== */
+		
+
+			.button {		// Global Buttons
+				width: 100%;
+				height: 87px;
+				float: left !important;
+				background-color: $subwhite;
+				border-radius: 0 0 3px 3px;
+				border-top: 1px solid $border;
+				overflow: hidden;
+				cursor: pointer;
+				transition:background-color 0.2s, width .8s $ease-in-out-quint;
+
+					p {
+						width: 100%;
+						// height: 100%;
+						position: relative;
+						top: 50%;
+						-webkit-transform: translateY(-50%);
+						-o-transform: translateY(-50%);
+						transform: translateY(-50%);
+						font-size: 19px;
+						font-weight: 700;
+						text-transform: uppercase;
+						text-align: center;
+						color: $border;
+						transition:color 0.2s;
+						@include user-select(none);
+
+						@include m(480) {
+							font-size: 18px;	
+						}
+					}
+
+				&:hover {
+					background-color: $contrast;
+
+						p {
+							color: $white;
+						}
+				}
+
+
+			}
+
+
+				form.ready .button {
+					
+					background-color: $contrast;
+					border-top-color: $contrast;
+
+						p {
+							color: $white;
+						}
+
+
+					&:hover {
+						background-color: $primary;
+						border-top-color: $primary;
+
+							p {
+								color: $white;
+							}
+					}
+				}
+
+				.buttons-wrap {
+					max-height: 97px;
+					@include clearfix-dk();
+				}
+
+				.button.call {
+					display: block;
+					width: 0;
+					background: $subwhite !important;
+					border-top-color: $border !important;
+					border-radius: 0 0 3px 0 !important;
+
+						p {
+							font-size: 14px;
+							color: $border !important;
+							width: 180px;
+							@include center();
+
+							@include m(480) {
+								width: 80%;
+							}
+						}
+
+						form.three-enter &:hover{
+							background-color: $contrast !important;
+							border-top-color: $contrast !important;
+
+								p {
+									color: $white !important;
+								}
+						}
+
+						form.three-exit & p{
+							font-size: 19px !important;
+						}
+
+						form.ready.three-enter &{
+							background-color: $contrast !important;
+							border-top-color: $contrast !important;
+
+								p {
+									color: $white !important;
+								}
+						}
+
+						form.ready.three-enter &:hover{
+							background-color: $primary !important;
+							border-top-color: $primary !important;
+
+								p {
+									color: $white !important;
+								}
+						}
+				}
+
+
+
+			.fieldset:nth-child(1), .fieldset:nth-child(1) + .half {		// First Fieldset Margin fix
+				padding-top: 68px;
+				margin-top: 0;
+
+				@include m(580) {
+					padding-top: 40px;
+				}
+			}
+
+
+
+
+
+		/* 
+		   Fieldset Input Styling
+		   ========================================================================== */
+		
+			.fieldset.input {		// Input Fieldset Styling
+
+					input {
+						position: relative;
+						width: 100%;
+						height: 55px;
+						padding: 0 15px;
+						font-size: 16px;
+						color: $grey;
+						transition:all 0.1s;
+
+							&:focus {
+								border-color: $contrast;
+								color: $primary;
+							}
+
+
+					}
+
+					::-webkit-input-placeholder 	{color: #878787}
+					:-moz-placeholder 				{color: #878787}
+					::-moz-placeholder 				{color: #878787}
+					:-ms-input-placeholder 			{color: #878787}
+			}
+
+			.fieldset.half {
+				float: left;
+				width: perc(214.5, 444);
+
+
+					&.lastname {
+						margin-top: 0;
+						padding-top: 68px;
+
+						@include m(580) {
+							padding-top: 40px;
+						}
+					}
+
+					&.last {
+						margin-left: perc(15,444);
+					}
+			}
+
+			.fieldset.one-fourth {
+				float: left;
+				width: perc(99.5, 444);
+
+					&.last {
+						margin-left: perc(15,444);
+					}
+			}
+
+			.fieldset.one-third {
+				float: left;
+				width: perc(138, 444);
+
+					&.last {
+						margin-left: perc(15,444);
+					}
+			}
+
+			.error-show .error {
+				.question {
+					color: $red;
+				}
+
+				input,
+				select,
+				textarea {
+					border-color: $red;
+				}
+
+				.wrap #signature {
+					border-color: $red;
+				}
+			}
+
+
+		/* 
+		   Fieldset Choices Styling
+		   ========================================================================== */
+
+			.fieldset.choices {@include clearfix-dk();}
+
+				.choice {		// Choice Box Styling
+					width: perc(76.68,444);
+					float: left;
+					margin-left: 1.75%;
+					margin-left: perc(15,444);;
+					text-align: center;
+					cursor: pointer;
+
+						label {
+						line-height: 55px;
+						font-weight: 600;
+
+						@include m(580) {
+							font-size: 15px;
+
+							@include m(380) {
+								font-size: 14px;
+							}
+
+								span {
+									display: none;
+								}
+
+						}
+
+							@include user-select(none);
+						    user-select: none;
+						    pointer-events:none;
+						}
+
+						p {
+							@include user-select(none);
+						}	
+
+					&.first {
+						margin-left: 0;
+					}
+
+					&.checked {
+						position: relative;
+						border-color: $contrast;
+						border-color: #fff;
+
+							label,
+							div {
+								color: $contrast;
+							}
+
+							&:before {
+								content: '';
+								position: absolute;
+								top: -2px;
+								left: -2px;
+								display: block;
+								width: 100%;
+								height: 100%;
+								border: 2px solid $contrast;
+								border-radius: 3px;
+								box-sizing: content-box;
+								z-index: 1;
+							}
+					}		
+
+				}
+
+
+
+			.choices.credit {
+
+					.choice {
+						width: perc(138,444);
+						height: 70px;
+					}
+
+					.wrap {
+						position: relative;
+						top: 50%;
+						-webkit-transform: translateY(-50%);
+						-o-transform: translateY(-50%);
+						transform: translateY(-50%);
+					}
+
+						.number {
+							font-size: 18px;
+							font-weight: 600;
+
+							@include m(580) {
+								font-size: 16px;
+							}
+						}
+
+						label {
+							display: block;
+							font-size: 12px;
+							font-weight: 600;
+							text-transform: uppercase;
+							line-height: 12px;
+
+							@include m(580) {
+								// font-size: 11px
+							}
+						}
+			}
+		.choices.terms {
+			margin-top: 30px;
+
+				.choice {
+					width: perc(138,444);
+					cursor: default;
+
+					div {
+						position: relative;
+						top: 49%;
+						-webkit-transform: translateY(-50%);
+						-o-transform: translateY(-50%);
+						transform: translateY(-50%);
+						float: left;
+						@include size(21);
+						padding: 0 5% 0 9%;
+
+							&:before {
+								font-size: 21px;
+							}
+					}
+
+					p {
+						position: relative;
+						top: 50%;
+						-webkit-transform: translateY(-50%);
+						-o-transform: translateY(-50%);
+						transform: translateY(-50%);
+						float: left;
+						font-size: 15px;
+						font-weight: 600;
+						color: $grey-mid;
+					}
+
+					@include m(580) {
+						div,
+						p {
+							@include unvalign();
+							float: none;
+							text-align: center;
+							@include center();
+						}
+
+						div {
+							padding: 7px 0 3px;
+						}
+
+						@include m(480) {   p {font-size: 14px;}   }
+
+						@include m(380) {   p {font-size: 13px;}   }
+					}
+				}
+
+			&.first {
+				.choice.first {
+						position: relative;
+						border-color: #fff;
+
+							div,
+							p {
+								color: $contrast;
+							}
+
+							div:before {
+								content: 'k';
+							}
+
+							&:before {
+								content: '';
+								position: absolute;
+								top: -2px;
+								left: -2px;
+								display: block;
+								width: 100%;
+								height: 100%;
+								border: 2px solid $contrast;
+								border-radius: 3px;
+								box-sizing: content-box;
+								z-index: 1;
+							}
+				}
+			}
+			
+			&.second {
+				.choice.first,
+				.choice.second {
+						position: relative;
+						border-color: #fff;
+
+							div,
+							p {
+								color: $contrast;
+							}
+
+							div:before {
+								content: 'k';
+							}
+
+							&:before {
+								content: '';
+								position: absolute;
+								top: -2px;
+								left: -2px;
+								display: block;
+								width: 100%;
+								height: 100%;
+								border: 2px solid $contrast;
+								border-radius: 3px;
+								box-sizing: content-box;
+								z-index: 1;
+							}
+				}
+			}			
+			&.third {
+				.choice.first,
+				.choice.second,
+				.choice.third {
+						position: relative;
+						border-color: #fff;
+
+							div,
+							p {
+								color: $contrast;
+							}
+
+							div:before {
+								content: 'k';
+							}
+
+							&:before {
+								content: '';
+								position: absolute;
+								top: -2px;
+								left: -2px;
+								display: block;
+								width: 100%;
+								height: 100%;
+								border: 2px solid $contrast;
+								border-radius: 3px;
+								box-sizing: content-box;
+								z-index: 1;
+							}
+				}
+			}
+		}
+
+		.terms-link {
+			color: $contrast;
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.fieldset.sign {
+			margin-top: 15px;
+		}
+
+		.signature-clear {
+			color: $contrast;
+			cursor: pointer;
+		}
+
+		#signature {
+			position: relative;
+			background-color: $subwhite;
+			border-radius: 3px;
+			border: 1px solid $divider;
+			cursor: pointer;
+
+			&:after {
+				// content: 'd';
+				position: absolute;
+				left: 0px;
+				bottom: 25px;
+				font-family: lccons;
+				font-size: 24px;
+			}
+
+			@include m(580) {
+				height: 111px !important;
+
+				canvas {
+					margin-top: 20px !important;
+				}
+			}
+		}
+
+input[type="radio"],
+.sign-placeholder {
+	display: none;
+}
+
+
+
+	/* 
+	   Skip Calculator
+	   ========================================================================== */
+	
+	#skip {
+		width: 70%;
+		max-width: 520px;
+		margin: 40px auto 0;
+		text-align: center;
+		font-size: 14px;
+		color: $grey-mid;
+	}
+
+		.link-like {
+			color: $primary;
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+	/* ========================================================================== */
+	
+
+
+/* ========================================================================== */
+
+
+
+
+
+
+/* 
+   Dual Line Label Fix (mobile)
+   ========================================================================== */
+
+
+@include m(455) {
+	
+	.dba {
+		p.question:after {
+			content: 'aaaaaa';
+			color: $white;
+		}
+	}	
+	.ssn, .ownership {
+		p.question:after {
+			content: ' aaaaaaaa';
+			color: $white;
+		}
+	}
+	.ssn p.question {padding-left: 10px;}	
+}
+
+@include m(480) {
+	
+	.tax_id {
+		p.question:after {
+			content: 'aaaaaaaaaaaaaaa';
+			color: $white;
+		}
+	}	
+}
+
+/* ========================================================================== */
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   6. Form Transitions / Animations
+   ========================================================================== */
+
+@import '_parts/animation';
+
+

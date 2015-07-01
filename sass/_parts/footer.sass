@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+
+footer
+  background-color: $subberwhite
+  padding-top: 20px
+  color: $border
+  font-size: 15px
+  font-weight: 600
+  .wrap
+    width: 90%
+    max-width: 1170px
+    margin: 0 auto
+    padding: 32px 0
+    border-top: 1px solid $border
+    +clearfix
+    .footer-section:nth-child(1)
+      width: 45%
+    .footer-section:nth-child(2)
+      width: 55%
+    .footer-section
+      float: left
+      @media screen and (max-width: 920px)
+        width: 90% !important
+        float: none
+        clear: both
+        +center
+      &-copyright
+        +clearfix
+        +m(920)
+          position: relative
+          width: 363px
+          +center
+          left: -12px
+
+        +m(480)
+          width: 290px
+          left: 0
+
+        +m(330)
+          left: -10px
+
+        .logo-footer
+          float: left
+      &-contact
+        clear: both
+        +clearfix
+        &-phone,
+        &-address,
+        &-email
+          clear: both
+          +m(920)
+            text-align: center
+            margin-bottom: 10px
+        .social-icon
+          float: left
+          margin-right: 8px
+          +m(920)
+            float: none
+            text-align: center
+        &-phone
+          // padding-top: 15px;
+          .social-icon
+            margin-right: 5px
+            font-size: 19px
+        &-address
+          padding-top: 10px
+          .social-icon
+            padding-top: 1px
+            font-size: 17px
+            margin-right: 7px
+        &-email
+          padding-top: 8px
+          padding-bottom: 25px
+          .social-icon
+            font-size: 15px
+            &:before
+              position: relative
+              top: 1px
+      &-social
+        +clearfix
+        margin-top: -10px
+        +m(920)
+          width: 208px
+          +center
+          margin-top: 25px
+
+        &-item
+          &:nth-child(2)
+            margin-left: 0
+          &-link
+            display: block
+            +clearfix
+            &-text
+              margin-left: 30px
+          .social-icon
+            background-color: $border
+            +size(23)
+            border-radius: 50%
+            float: left
+            top: -3px
+            &:before
+              color: $subberwhite
+              top: 5px
+              left: 0
+              right: 0
+              font-size: 13px
+              text-align: center
+      &-links
+        +clearfix
+        margin-top: 5px
+        +m(920)
+          width: 388px
+          +center
+          margin-top: 10px
+          li:nth-child(3)
+            margin-left: 0
+
+        +m(480)
+          width: 100%
+          li
+            float: none
+            margin-left: 0
+    .copyright
+      float: left
+      padding-top: 19px
+      margin-left: 20px
+      span
+        font-family: helvetica, arial, sans-serif
+        font-weight: 700
+        font-size: 16px
+      +m(480)
+        // margin-left: 15px;
+        // font-size: 14px;
+        padding-top: 10px
+        display: block
+        width: 210px
+    ul
+      +m(920)
+        float: none
+        clear: both
+        // width: 250px;
+        +clearfix
+        text-align: center
+
+      li
+        float: right
+        margin: 15px 0 0 24px
+  a
+    color: $border
+    &:hover
+      text-decoration: underline
+
+/* ==========================================================================

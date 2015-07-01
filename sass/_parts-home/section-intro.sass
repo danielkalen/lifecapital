@@ -1,0 +1,191 @@
+.section-title
+	display: block
+	position: relative
+
+	.js .intro &
+		+transform(translateY(-80px))
+		opacity: 0
+
+
+	&-text
+		width: 90%
+		+center
+
+		.intro &
+			padding-top: 125px
+
+
+	&-subtitle
+		max-width: 538px
+		+center
+		padding-top: 17px
+		font-size: 18px
+		text-align: center
+		color: $grey
+
+
+
+
+
+.intro-benefits
+	width: 100%
+	padding: 120px 20px 0
+	box-sizing: border-box
+	+clearfix
+
+	+max(920)
+		padding: 110px 20px 0
+
+
+
+	&-coins
+		width: 50%
+		float: left
+		#coins
+			position: relative
+			top: 0
+			float: right
+			padding-right: 25%
+			fill: none
+
+		+max(1140)
+			width: 40%
+			#svg-coins
+				padding-right: 20%
+
+		+max(920)
+			width: 34%
+			+transform(scale(0.85))
+			#svg-coins
+				padding-right: 12%
+
+		+max(820)
+			display: none
+
+
+
+
+	&-content
+		width: 50%
+		float: left
+
+		+max(1140)
+			width: 60%
+		+max(920)
+			width: 66%
+		+max(840)
+			width: 100%
+			text-align: center
+
+		&-wrap
+			+max(840)
+				width: 100%
+				max-width: 540px
+				+center
+
+
+		&-title
+			font-size: 29px
+			font-weight: 400
+			color: $primary
+
+			+max(580)
+				max-width: 370px
+				+center
+				padding-bottom: 10px
+
+
+		&-subtitle
+			padding-bottom: 22px
+			font-size: 18px
+			font-weight: 400
+			color: $grey-light
+			
+			+max(580)
+				max-width: 370px
+				+center
+
+
+		&-list
+			position: relative
+
+			+max(580)
+				width: 90%
+				+center
+
+
+			&-line
+				position: absolute
+				top: 0
+				left: 0
+
+
+			&-item
+				height: 42px
+				padding-top: 32px
+
+				&:nth-child(2)
+					padding-top: 0
+
+				&-wrap
+					// SVG Container
+					position: absolute
+					+size(42)
+					left: 2px
+
+				&-svg
+					position: absolute
+					+valign
+					left: 0
+					right: 0
+					+center
+					overflow: visible !important
+					stroke: $primary
+					stroke-width: 1.4
+					stroke-linejoin: round
+					stroke-linecap: round
+
+
+					&#advertising
+						.js &
+							stroke-dasharray: 72px
+							stroke-dashoffset: 72px
+					&#inventory
+						.js &
+							stroke-dasharray: 80px
+							stroke-dashoffset: 80px
+					&#debt
+						.js &
+							stroke-dasharray: 96px
+							stroke-dashoffset: 96px
+					&#cashflow
+						.js &
+							stroke-dasharray: 93px
+							stroke-dashoffset: 93px
+					&#expand
+						.js &
+							stroke-dasharray: 78px
+							stroke-dashoffset: 78px
+					&#improve
+						.js &
+							stroke-dasharray: 64px
+							stroke-dashoffset: 64px
+
+					*
+						fill: none
+
+				&-text
+					position: relative
+					+valign
+					padding-left: 58px
+					color: $grey-middle
+					font-weight: 600
+					text-align: left
+
+					.js &
+						+transform(translateX(30px) translateY(-50%))
+						opacity: 0
+
+
+#icon-improve
+	stroke-width: 1.8

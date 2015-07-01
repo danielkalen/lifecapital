@@ -1,0 +1,79 @@
+.hero
+  &-text
+    position: absolute
+    +valign(48%)
+    left: 0
+    right: 0
+    text-align: center
+    color: $white
+    font-family: proxima
+    
+    +max(1440)
+      top: 52%
+    +max(768, height)
+      top: 58%
+    +max(700, height)
+      top: 64%
+    +max(760)
+      top: 370px
+
+    &-title
+      width: 90%
+      +center
+      font-size: 59px
+      font-weight: 400
+      
+      +max(760)
+        font-size: 7.7vw
+      +max(580)
+        width: 67%
+        min-width: 300px
+        font-size: 42px
+        line-height: 46px
+
+    &-subtitle
+      position: relative
+      width: 90%
+      max-width: 545px
+      +center
+      padding-top: 23px
+      font-size: 19px
+      line-height: 25px
+      font-weight: 400
+      font-style: italic
+
+      +max(580)
+        width: 80%
+        font-size: 17px
+
+  &-action
+    position: absolute
+    bottom: 75px
+    left: 0
+    right: 0
+    +center
+    text-align: center
+    color: $white
+
+    +max(768)
+      bottom: 8%
+    
+    +max(768)
+      +max(700, height)
+        display: none
+    
+    &-icon
+      position: relative
+      +center(0, 7px)
+
+      &:before
+        +icon('g')
+        font-size: 53px
+    
+    &-text
+      text-align: center
+      font-family: proxima
+      font-size: 14px
+      font-weight: 300
+      letter-spacing: 1.1px
+      text-transform: uppercase

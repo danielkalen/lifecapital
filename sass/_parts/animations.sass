@@ -1,0 +1,142 @@
+.icon-gear
+  +size(27, 25)
+  color: #fff
+  margin: 0
+  margin-left: -25px
+  transition: margin-left 0.5s $ease-in-out-circ
+  &:before
+    +size(27, 28)
+    display: block
+    font-family: lccons !important
+    font-size: 27px
+    top: -2px
+
+.icon-gear.move
+  margin-left: -160px
+
+.icon-gear.spin:before
+  -webkit-animation: spin 1.5s linear infinite
+  -moz-animation: spin 1.5s linear infinite
+  animation: spin 1.5s linear infinite
+  -webkit-animation-delay: .9s
+  -moz-animation-delay: .9s
+  animation-delay: .9s
+
+@-moz-keyframes spin
+  100%
+    -moz-transform: rotate(360deg)
+
+
+@-webkit-keyframes spin
+  100%
+    -webkit-transform: rotate(360deg)
+
+
+@keyframes spin
+  100%
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+
+.step
+  transition: height 1.1s $ease-in-out-quint
+
+.button .text
+  position: absolute
+  right: 0
+  top: 1px
+  opacity: 0
+
+.button.active
+  background: $primary !important
+
+.divide-buttons
+  .button
+    width: 50% !important
+    border-radius: 0 0 0 3px !important
+
+.one-exit
+  .step.one
+    height: 0
+  .button.calculate > p
+    position: relative
+    width: 170px
+    left: 0
+    right: 0
+    +center
+  &.skipped
+    .button.calculate > p
+      width: 300px
+
+.two-enter
+  .step.two
+    height: 450px
+
+.two-enter.apply
+  .button.apply, .button.owner-info, .button.submit
+    width: 100% !important
+    border-radius: 0 0 3px 3px !important
+  .button.call
+    width: 0% !important
+
+.button.apply > p
+  position: relative
+  width: 140px
+  left: 0
+  right: 0
+  +center
+
+.two-enter.call
+  .button.call
+    width: 100% !important
+    border-radius: 0 0 3px 3px !important
+  .button.apply
+    width: 0% !important
+
+.two-exit
+  .step.two
+    height: 0
+
+.three-enter.call
+  .button.call
+    width: 100% !important
+    border-radius: 0 0 3px 3px !important
+  .button.calculate
+    width: 0% !important
+  .step.three.call
+    height: 570px
+    +m(580)
+      height: 530px
+  .button.call.active
+    background-color: $primary !important
+    p
+      color: $white !important
+
+.three-enter.apply
+  .step.three.apply
+    height: 1100px
+
+.three-exit
+  .step.three.three.three
+    height: 0
+
+.four-enter
+  .step.four
+    height: 1060px
+  &.expand
+    .step.four
+      height: 1590px
+
+.four-exit
+  .step.four.four.four
+    height: 0
+  .button.submit > p
+    position: relative
+    width: 145px
+    left: 0
+    right: 0
+    +center
+
+.success-enter
+  .step.success
+    height: 370px

@@ -1,0 +1,399 @@
+section.section.section-five
+  h2 Get Started
+  p.subtitle See what your business is pre-approved for in less than a minute.
+  form#calc(action='')
+    .step.one
+      .fieldset.input.business_type
+        p.question Type Of Business
+        .wrap
+          input(type='text', name='business_type', placeholder='Restaurant, Clothing Store, etc.')
+      .fieldset.choices.months
+        p.question months In Business
+        .wrap
+          .choice.first
+            label(for='0') 0
+            input#0.radio(type='radio', name='months', value='0')
+          .choice.second
+            label(for='1-6')
+              | 1
+              span  
+              | -
+              span  
+              | 6
+            input#1-6.radio(type='radio', name='months', value='1-6')
+          .choice.third
+            label(for='6-18')
+              | 6
+              span  
+              | -
+              span  
+              | 18
+            input#6-18.radio(type='radio', name='months', value='6-18')
+          .choice.fourth
+            label(for='18-36')
+              | 18
+              span  
+              | -
+              span  
+              | 36
+            input#18-36.radio(type='radio', name='months', value='18-36')
+          .choice.fifth
+            label(for='36') 36 +
+            input#36.radio(type='radio', name='months', value='36')
+      .fieldset.choices.credit
+        p.question Approximate Credit Score
+        .wrap
+          .choice.first
+            .wrap
+              .number 0-499
+              label(for='poor') Poor
+              input#poor.radio(type='radio', name='credit', value='poor')
+          .choice.second
+            .wrap
+              .number 500-640
+              label(for='average') Average
+              input#average.radio(type='radio', name='credit', value='average')
+          .choice.third
+            .wrap
+              .number 650+
+              label(for='excellent') Excellent
+              input#excellent.radio(type='radio', name='credit', value='excellent')
+      .fieldset.range.volume
+        p.question
+          | Monthly Credit 
+          span Card Processing
+          |  Volume
+        .wrap
+          .range.volume
+            .start
+            .end
+      .fieldset.range.sales
+        p.question Monthly Gross Sales
+        .wrap
+          .range.sales
+            .start
+            .end
+      input#credit_volume(type='hidden', name='credit_volume')
+      input#gross_sales(type='hidden', name='gross_sales')
+    .step.two.results
+      p.approval
+        | You've been pre-approved for
+      p.number
+        | $
+        span
+      p.length
+        | Term Length Options:
+      .fieldset.choices.terms
+        .wrap
+          .choice.first
+            .icon-falsemark
+            p 3-6 months
+          .choice.second
+            .icon-falsemark
+            p 6-9 months
+          .choice.third
+            .icon-falsemark
+            p 9-12 months
+    .step.three.call
+      .fieldset.input.half.call_firstname
+        p.question First Name
+        .wrap
+          input(type='text', name='call_firstname', placeholder='John')
+      .fieldset.input.half.call_lastname.last
+        p.question Last Name
+        .wrap
+          input(type='text', name='call_lastname', placeholder='Doe')
+      .clearfix-dk
+      .fieldset.inputmask.input.call_phone
+        p.question Phone Number
+        .wrap
+          input.has-inputmask(type='text', name='call_phone')
+      .fieldset.input.call_email
+        p.question Email Address
+        .wrap
+          input(type='text', name='call_email')
+      .fieldset.optional.inputmask.input.date.call_date.half
+        p.question Date (optional)
+        .wrap
+          input.optional(type='text', name='call_date')
+      .fieldset.optional.inputmask.input.call_time.half.last
+        p.question Time (optional)
+        .wrap
+          input.optional(type='text', name='call_time')
+      .clearfix-dk
+    .step.three.apply
+      p.step-title Business Information
+      .fieldset.input.half.legal_name
+        p.question Company Legal Name
+        .wrap
+          input(type='text', name='legal_name')
+      .fieldset.input.half.dba.last
+        p.question Company DBA Name
+        .wrap
+          input(type='text', name='dba_name')
+      .clearfix-dk
+      .fieldset.input.business_address
+        p.question Business Address
+        .wrap
+          input(type='text', name='business_address')
+      .fieldset.input.half.business_city
+        p.question City
+        .wrap
+          input(type='text', name='business_city')
+      .fieldset.select.half.business_state.last
+        p.question State
+        .wrap
+          select(name='business_state')
+            option(value='none') Select State
+            option(value='AL') Alabama
+            option(value='AK') Alaska
+            option(value='AZ') Arizona
+            option(value='AR') Arkansas
+            option(value='CA') California
+            option(value='CO') Colorado
+            option(value='CT') Connecticut
+            option(value='DE') Delaware
+            option(value='DC') District Of Columbia
+            option(value='FL') Florida
+            option(value='GA') Georgia
+            option(value='HI') Hawaii
+            option(value='ID') Idaho
+            option(value='IL') Illinois
+            option(value='IN') Indiana
+            option(value='IA') Iowa
+            option(value='KS') Kansas
+            option(value='KY') Kentucky
+            option(value='LA') Louisiana
+            option(value='ME') Maine
+            option(value='MD') Maryland
+            option(value='MA') Massachusetts
+            option(value='MI') Michigan
+            option(value='MN') Minnesota
+            option(value='MS') Mississippi
+            option(value='MO') Missouri
+            option(value='MT') Montana
+            option(value='NE') Nebraska
+            option(value='NV') Nevada
+            option(value='NH') New Hampshire
+            option(value='NJ') New Jersey
+            option(value='NM') New Mexico
+            option(value='NY') New York
+            option(value='NC') North Carolina
+            option(value='ND') North Dakota
+            option(value='OH') Ohio
+            option(value='OK') Oklahoma
+            option(value='OR') Oregon
+            option(value='PA') Pennsylvania
+            option(value='RI') Rhode Island
+            option(value='SC') South Carolina
+            option(value='SD') South Dakota
+            option(value='TN') Tennessee
+            option(value='TX') Texas
+            option(value='UT') Utah
+            option(value='VT') Vermont
+            option(value='VA') Virginia
+            option(value='WA') Washington
+            option(value='WV') West Virginia
+            option(value='WI') Wisconsin
+            option(value='WY') Wyoming
+      .clearfix-dk
+      .fieldset.inputmask.input.half.zip.business_zip
+        p.question Zip Code
+        .wrap
+          input.has-inputmask(type='text', name='business_zip')
+      .fieldset.inputmask.input.half.business_phone.last
+        p.question Phone Number
+        .wrap
+          input.has-inputmask(type='text', name='business_phone')
+      .clearfix-dk
+      .fieldset.inputmask.input.half.tax_id
+        p.question Tax ID
+        .wrap
+          input.has-inputmask(type='text', name='tax_id')
+      .fieldset.inputmask.input.half.date.date_started.last
+        p.question Date Business Started
+        .wrap
+          input.has-inputmask(type='text', name='date_started')
+      .clearfix-dk
+      .fieldset.optional.input.half.website
+        p.question Website (opt)
+        .wrap
+          input.optional(type='text', name='website')
+      .fieldset.select.half.entity_type.last
+        p.question Entity Type
+        .wrap
+          select(name='entity_type')
+            option(value='none') Select One
+            option(value='llc') LLC
+            option(value='corp') Corporation
+            option(value='scorp') S-Corp
+            option(value='partnership') Partnership
+            option(value='sole') Sole Proprietorship
+      .clearfix-dk
+      .fieldset.input.email_address
+        p.question Email Address
+        .wrap
+          input(type='text', name='email_address')
+      .fieldset.input.textarea.services_sold
+        p.question Product/Services Sold
+        .wrap
+          textarea(name='services_sold')
+    .step.four
+      p.step-title Owner Information
+      .fieldset.input.half.first_name
+        p.question First Name
+        .wrap
+          input(type='text', name='first_name', placeholder='John')
+      .fieldset.input.half.last_name.last
+        p.question Last Name
+        .wrap
+          input(type='text', name='last_name', placeholder='Doe')
+      .clearfix-dk
+      .fieldset.input.home_address
+        p.question Home Address
+        .wrap
+          input(type='text', name='home_address')
+      .fieldset.input.one-fourth.home_city
+        p.question City
+        .wrap
+          input(type='text', name='home_city')
+      .fieldset.select.half.home_state.last
+        p.question State
+        .wrap
+          select(name='home_state')
+            option(value='none') Select State
+            option(value='AL') Alabama
+            option(value='AK') Alaska
+            option(value='AZ') Arizona
+            option(value='AR') Arkansas
+            option(value='CA') California
+            option(value='CO') Colorado
+            option(value='CT') Connecticut
+            option(value='DE') Delaware
+            option(value='DC') District Of Columbia
+            option(value='FL') Florida
+            option(value='GA') Georgia
+            option(value='HI') Hawaii
+            option(value='ID') Idaho
+            option(value='IL') Illinois
+            option(value='IN') Indiana
+            option(value='IA') Iowa
+            option(value='KS') Kansas
+            option(value='KY') Kentucky
+            option(value='LA') Louisiana
+            option(value='ME') Maine
+            option(value='MD') Maryland
+            option(value='MA') Massachusetts
+            option(value='MI') Michigan
+            option(value='MN') Minnesota
+            option(value='MS') Mississippi
+            option(value='MO') Missouri
+            option(value='MT') Montana
+            option(value='NE') Nebraska
+            option(value='NV') Nevada
+            option(value='NH') New Hampshire
+            option(value='NJ') New Jersey
+            option(value='NM') New Mexico
+            option(value='NY') New York
+            option(value='NC') North Carolina
+            option(value='ND') North Dakota
+            option(value='OH') Ohio
+            option(value='OK') Oklahoma
+            option(value='OR') Oregon
+            option(value='PA') Pennsylvania
+            option(value='RI') Rhode Island
+            option(value='SC') South Carolina
+            option(value='SD') South Dakota
+            option(value='TN') Tennessee
+            option(value='TX') Texas
+            option(value='UT') Utah
+            option(value='VT') Vermont
+            option(value='VA') Virginia
+            option(value='WA') Washington
+            option(value='WV') West Virginia
+            option(value='WI') Wisconsin
+            option(value='WY') Wyoming
+      .fieldset.inputmask.input.one-fourth.zip.home_zip.last
+        p.question Zip
+        .wrap
+          input(type='text', name='home_zip')
+      .clearfix-dk
+      .fieldset.inputmask.input.number.one-third.ownership
+        p.question Ownership
+        .wrap
+          input.has-inputmask(type='text', placeholder='%', name='ownership')
+      .fieldset.inputmask.input.one-third.ssn.last
+        p.question SSN
+        .wrap
+          input.has-inputmask(type='text', name='ssn')
+      .fieldset.inputmask.input.date.one-third.dob.last
+        p.question Date of birth
+        .wrap
+          input.has-inputmask(type='text', name='dob')
+      .clearfix-dk
+      .fieldset.input.file.optional
+        p.question Optional Document Attachment
+        .wrap
+          input.optional(type='file', name='file', accept='.pdf, .doc, .png, .tiff, .jpg, .rtf, .rtfd, .pages, .xls, .csv', multiple='')
+      .clearfix-dk
+      .fieldset.choices.partner
+        p.question Do you have any business partners?
+        .wrap
+          .choice.first
+            .wrap
+              label(for='yes') Yes
+              input.radio(type='radio', name='partner', value='yes')
+          .choice.second
+            .wrap
+              label(for='no') No
+              input.radio(type='radio', name='partner', value='no')
+      .partner-placeholder
+      .fieldset.terms
+        p.question.agreement
+          | By Signing below, I 
+          span.terms-name
+          | agree to the 
+          span.terms-link Terms & Conditions
+          | .
+        .md-modal.md-effect-5
+          .md-content
+            .icon-cross
+            .img.img-sunflower-modal
+              p.title-modal
+                span
+                  | Life Capital
+                  br
+                  | Terms & Conditions
+            p.desc
+              | Applicant authorizes its assigns, agents, banks or financial institutions to obtain an investigative or consumer report from a credit bureau or a credit agency and to investigate the references given on any other statement or data obtained from applicant.
+      .fieldset.sign.error
+        p.question
+          | Signature (
+          span.signature-clear clear
+          | )
+        .wrap
+          #signature
+          input#sign(type='hidden', name='sign')
+          input#img(type='hidden', name='img')
+          input#skipped(type='hidden', name='skipped')
+          input#sign_date(type='hidden', name='sign_date')
+          .sign-placeholder
+    .step.success
+      .icon-success
+        span.line.tip
+        span.line.long
+        .placeholder
+        .fix
+      h2 Success!
+      p.success-message
+        | Your application has been successfuly submitted! You will be contacted by an agent shortly.
+    .buttons-wrap
+      .button.calculate
+        p Calculate My Results
+      .button.call
+        p Schedule a Phone Call
+  #skip
+    | Alternatively you can 
+    span#application.link-like start applying
+    |  or 
+    span#schedule.link-like schedule a consultation phone call.

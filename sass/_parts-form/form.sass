@@ -1,0 +1,545 @@
+@import form-range
+@import form-success
+
+form
+  position: relative
+  width: 90%
+  max-width: 580px
+  +center(45px, 0)
+  background-color: $white
+  border: 1px solid $border
+  border-radius: 3px
+
+/* ==========================================================================
+ * STEPS
+ * ========================================================================== */
+
+.step
+  padding: 0 68px
+  overflow: hidden
+  +m(580)
+    padding: 0 40px
+
+  +m(420)
+    padding: 0 30px
+
+.step.one
+  height: 688px
+  +m(580)
+    height: 660px
+
+.step.two
+  +m(420)
+    padding: 0 20px
+
+  > p
+    text-align: center
+  .approval
+    padding-top: 88px
+    font-size: 28px
+    font-weight: 300
+    color: $grey-mid
+  .number
+    padding-top: 23px
+    font-size: 43px
+    font-weight: 300
+    color: $contrast
+  .length
+    padding-top: 50px
+    font-size: 20px
+    font-weight: 400
+    color: $grey-mid
+
+.step.two,
+.step.three,
+.step.four,
+.step.success
+  height: 0
+
+/* ==========================================================================
+ * Fieldsets (Global)
+ * ========================================================================== */
+
+.fieldset
+  // Global Fieldsets
+  width: 100%
+  margin-top: 37px
+  .wrap
+    width: 100%
+    position: relative
+  .question
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    color: $grey-mid
+    padding-bottom: 10px
+    +m(480)
+      span
+        display: none
+  =field-style
+    background-color: $subwhite
+    border: 1px solid $border
+    border-radius: 3px
+    box-sizing: border-box
+    color: $grey-mid
+  input,
+  select,
+  .choice
+    +field-style
+    height: 55px
+  textarea
+    +field-style
+    height: 90px
+    padding: 12px 15px
+  select
+    width: 100%
+    padding: 15px
+    cursor: pointer
+  &.select .wrap
+    cursor: pointer
+    &:before
+      content: 'l'
+      position: absolute
+      top: 0
+      right: 15px
+      display: block
+      width: 15px
+      font-family: lccons
+      color: $grey-mid
+      font-size: 22px
+      line-height: 55px
+  &.file .wrap
+    +field-style
+    height: 55px
+    input
+      position: relative
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
+      transform: translateY(-50%)
+      height: auto !important
+      border: 0
+
+.step-title
+  position: relative
+  bottom: -20px
+  padding-top: 18px
+  font-size: 26px
+  color: $primary
+  text-align: center
+  &.partner-title
+    padding-top: 0
+    bottom: -40px
+    +m(580)
+      bottom: -25px
+
+/* ==========================================================================
+ * Buttons (global)
+ * ========================================================================== */
+
+.button
+  // Global Buttons
+  width: 100%
+  height: 87px
+  float: left !important
+  background-color: $subwhite
+  border-radius: 0 0 3px 3px
+  border-top: 1px solid $border
+  overflow: hidden
+  cursor: pointer
+  transition: background-color 0.2s, width 0.8s $ease-in-out-quint
+  p
+    width: 100%
+    // height: 100%;
+    position: relative
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    transform: translateY(-50%)
+    font-size: 19px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    color: $border
+    transition: color 0.2s
+    +user-select(none)
+    +m(480)
+      font-size: 18px
+  &:hover
+    background-color: $contrast
+    p
+      color: $white
+
+form.ready .button
+  background-color: $contrast
+  border-top-color: $contrast
+  p
+    color: $white
+  &:hover
+    background-color: $primary
+    border-top-color: $primary
+    p
+      color: $white
+
+.buttons-wrap
+  max-height: 97px
+  +clearfix
+
+.button.call
+  display: block
+  width: 0
+  background: $subwhite !important
+  border-top-color: $border !important
+  border-radius: 0 0 3px 0 !important
+  p
+    font-size: 14px
+    color: $border !important
+    width: 180px
+    +center
+    +m(480)
+      width: 80%
+  form.three-enter &:hover
+    background-color: $contrast !important
+    border-top-color: $contrast !important
+    p
+      color: $white !important
+  form.three-exit & p
+    font-size: 19px !important
+  form.ready.three-enter &
+    background-color: $contrast !important
+    border-top-color: $contrast !important
+    p
+      color: $white !important
+  form.ready.three-enter &:hover
+    background-color: $primary !important
+    border-top-color: $primary !important
+    p
+      color: $white !important
+
+.fieldset:nth-child(1), .fieldset:nth-child(1) + .half
+  // First Fieldset Margin fix
+  padding-top: 68px
+  margin-top: 0
+  +m(580)
+    padding-top: 40px
+
+/* ==========================================================================
+ * Fieldset Input Styling
+ * ========================================================================== */
+
+.fieldset.input
+  // Input Fieldset Styling
+  input
+    position: relative
+    width: 100%
+    height: 55px
+    padding: 0 15px
+    font-size: 16px
+    color: $grey
+    transition: all 0.1s
+    &:focus
+      border-color: $contrast
+      color: $primary
+  \::-webkit-input-placeholder
+    color: #878787
+  \:-moz-placeholder
+    color: #878787
+  \::-moz-placeholder
+    color: #878787
+  \:-ms-input-placeholder
+    color: #878787
+
+.fieldset.half
+  float: left
+  width: perc(214.5, 444)
+  &.lastname
+    margin-top: 0
+    padding-top: 68px
+    +m(580)
+      padding-top: 40px
+  &.last
+    margin-left: perc(15, 444)
+
+.fieldset.one-fourth
+  float: left
+  width: perc(99.5, 444)
+  &.last
+    margin-left: perc(15, 444)
+
+.fieldset.one-third
+  float: left
+  width: perc(138, 444)
+  &.last
+    margin-left: perc(15, 444)
+
+.error-show .error
+  .question
+    color: $red
+  input,
+  select,
+  textarea
+    border-color: $red
+  .wrap #signature
+    border-color: $red
+
+/* ==========================================================================
+ * Fieldset Choices Styling
+ * ========================================================================== */
+
+.fieldset.choices
+  +clearfix
+
+.choice
+  // Choice Box Styling
+  width: perc(76.68, 444)
+  float: left
+  margin-left: 1.75%
+  margin-left: perc(15, 444)
+  text-align: center
+  cursor: pointer
+  label
+    line-height: 55px
+    font-weight: 600
+    +m(580)
+      font-size: 15px
+      +m(380)
+        font-size: 14px
+
+      span
+        display: none
+
+    +user-select(none)
+    user-select: none
+    pointer-events: none
+  p
+    +user-select(none)
+  &.first
+    margin-left: 0
+  &.checked
+    position: relative
+    border-color: $contrast
+    border-color: #fff
+    label,
+    div
+      color: $contrast
+    &:before
+      content: ''
+      position: absolute
+      top: -2px
+      left: -2px
+      display: block
+      width: 100%
+      height: 100%
+      border: 2px solid $contrast
+      border-radius: 3px
+      box-sizing: content-box
+      z-index: 1
+
+.choices.credit
+  .choice
+    width: perc(138, 444)
+    height: 70px
+  .wrap
+    position: relative
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    transform: translateY(-50%)
+  .number
+    font-size: 18px
+    font-weight: 600
+    +m(580)
+      font-size: 16px
+  label
+    display: block
+    font-size: 12px
+    font-weight: 600
+    text-transform: uppercase
+    line-height: 12px
+    +m(580)
+      // font-size: 11px
+
+.choices.terms
+  margin-top: 30px
+  .choice
+    width: perc(138, 444)
+    cursor: default
+    div
+      position: relative
+      top: 49%
+      -webkit-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
+      transform: translateY(-50%)
+      float: left
+      +size(21)
+      padding: 0 5% 0 9%
+      &:before
+        font-size: 21px
+    p
+      position: relative
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
+      transform: translateY(-50%)
+      float: left
+      font-size: 15px
+      font-weight: 600
+      color: $grey-mid
+    +m(580)
+      div,
+      p
+        +unvalign
+        float: none
+        text-align: center
+        +center
+      div
+        padding: 7px 0 3px
+      +m(480)
+        p
+          font-size: 14px
+
+      +m(380)
+        p
+          font-size: 13px
+  &.first
+    .choice.first
+      position: relative
+      border-color: #fff
+      div,
+      p
+        color: $contrast
+      div:before
+        content: 'k'
+      &:before
+        content: ''
+        position: absolute
+        top: -2px
+        left: -2px
+        display: block
+        width: 100%
+        height: 100%
+        border: 2px solid $contrast
+        border-radius: 3px
+        box-sizing: content-box
+        z-index: 1
+  &.second
+    .choice.first,
+    .choice.second
+      position: relative
+      border-color: #fff
+      div,
+      p
+        color: $contrast
+      div:before
+        content: 'k'
+      &:before
+        content: ''
+        position: absolute
+        top: -2px
+        left: -2px
+        display: block
+        width: 100%
+        height: 100%
+        border: 2px solid $contrast
+        border-radius: 3px
+        box-sizing: content-box
+        z-index: 1
+  &.third
+    .choice.first,
+    .choice.second,
+    .choice.third
+      position: relative
+      border-color: #fff
+      div,
+      p
+        color: $contrast
+      div:before
+        content: 'k'
+      &:before
+        content: ''
+        position: absolute
+        top: -2px
+        left: -2px
+        display: block
+        width: 100%
+        height: 100%
+        border: 2px solid $contrast
+        border-radius: 3px
+        box-sizing: content-box
+        z-index: 1
+
+.terms-link
+  color: $contrast
+  cursor: pointer
+  &:hover
+    text-decoration: underline
+
+.fieldset.sign
+  margin-top: 15px
+
+.signature-clear
+  color: $contrast
+  cursor: pointer
+
+#signature
+  position: relative
+  background-color: $subwhite
+  border-radius: 3px
+  border: 1px solid $divider
+  cursor: pointer
+  &:after
+    // content: 'd';
+    position: absolute
+    left: 0px
+    bottom: 25px
+    font-family: lccons
+    font-size: 24px
+  +m(580)
+    height: 111px !important
+    canvas
+      margin-top: 20px !important
+
+input[type="radio"],
+.sign-placeholder
+  display: none
+
+/* ==========================================================================
+ * Skip Calculator
+ * ========================================================================== */
+
+#skip
+  width: 70%
+  max-width: 520px
+  margin: 40px auto 0
+  text-align: center
+  font-size: 14px
+  color: $grey-mid
+
+.link-like
+  color: $primary
+  cursor: pointer
+  &:hover
+    text-decoration: underline
+
+/* ==========================================================================
+ * Dual Line Label Fix (mobile)
+ * ========================================================================== */
+
++m(455)
+  .dba
+    p.question:after
+      content: 'aaaaaa'
+      color: $white
+  .ssn, .ownership
+    p.question:after
+      content: ' aaaaaaaa'
+      color: $white
+  .ssn p.question
+    padding-left: 10px
+
+
++m(480)
+  .tax_id
+    p.question:after
+      content: 'aaaaaaaaaaaaaaa'
+      color: $white

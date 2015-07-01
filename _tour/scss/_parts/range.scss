@@ -1,0 +1,210 @@
+
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+.noUi-target,
+.noUi-target * {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-ms-touch-action: none;
+-ms-user-select: none;
+-moz-user-select: none;
+-moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noUi-target {
+  position: relative;
+  direction: ltr;
+}
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      display: block;
+      @include size(12);
+      background: $border;
+      border-radius: 50%;
+      z-index: 1;
+    }
+}
+.noUi-origin {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+}
+.noUi-stacking .noUi-handle {
+/* This class is applied to the lower origin when
+   its values is > 50%. */
+  z-index: 10;
+}
+.noUi-stacking + .noUi-origin {
+/* Fix stacking order in IE7, which incorrectly
+   creates a new context for the origins. */
+  *z-index: -1;
+}
+.noUi-state-tap .noUi-origin {
+-webkit-transition: left 0.3s, top 0.3s;
+  transition: left 0.3s, top 0.3s;
+}
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+.noUi-base {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/* Slider size and handle placement;
+ */
+.noUi-horizontal {
+  height: 12px;
+}
+.noUi-horizontal .noUi-handle {
+  @include size(23);
+  left: -17px;
+  top: -6px;
+}
+
+/* Styling;
+ */
+.noUi-origin {
+  background-color: $subberwhite;
+  border-radius: 15px;
+  // right: -1px;
+}
+.noUi-target {
+  background-color: $contrast;
+  border-radius:19px;
+}
+.noUi-target.noUi-connect {
+}
+
+/* Handles and cursors;
+ */
+.noUi-handle {
+  position: relative;
+  border: 1px solid $primary;
+  border-radius: 50%;
+  background: $contrast;
+  cursor: pointer;
+  box-sizing: border-box;
+  z-index: 2;
+
+    div {
+      position: absolute;
+      top: 32px;
+      // left: -50%;
+      // left: 0;
+      // width: 100%;
+      right: -90%;
+      font-size: 16px;
+      font-weight: 600;
+      color: $contrast;
+
+        &:before {
+          content: '$';
+        }
+    }
+}
+.noUi-active {
+  background: $primary;
+
+}
+
+.fieldset .range {
+  
+    .start {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include size(12);
+      background: $primary;
+      border-radius: 50%;
+
+        &:after {
+          content: '$0';
+          position: absolute;
+          top: 27px;
+          left: -5px;
+          font-size: 16px;
+          font-weight: 600;
+          color: $border;
+          opacity: 1;
+          transition:opacity .1s;
+        }
+    }  
+
+    .end {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include size(12);
+      background: $border;
+      border-radius: 50%;
+      // z-index: 1;
+
+        &:after {
+          content: '$150,000';
+          position: absolute;
+          top: 27px;
+          right: -26px;
+          font-size: 16px;
+          font-weight: 600;
+          color: $border;
+          opacity: 1;
+          transition:opacity .1s;
+        }
+    }
+}
+
+.fieldset .range.sales{
+ 
+
+    .end {
+
+        &:after {
+          content: '$250,000';
+          right: -28px;
+        }
+    }
+}
+
+.hide-start-volume .fieldset.volume .range .start:after {
+  opacity: 0;
+}
+.hide-end-volume .fieldset.volume .range .end:after {
+  opacity: 0;
+}
+.hide-start-sales .fieldset.sales .range .start:after {
+  opacity: 0;
+}
+.hide-end-sales .fieldset.sales .range .end:after {
+  opacity: 0;
+}
+
+.fieldset .range {
+  width: perc(365,444);
+  margin: 0 auto;
+}
+
+.fieldset.sales {
+  margin-top: 77px;
+}
+
+

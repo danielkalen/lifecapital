@@ -1,0 +1,233 @@
+
+// color
+
+$primary: #0c557f;
+$primary-dark: darken($primary, 7);
+$contrast: #1173a9;
+$contrast-dark: darken($contrast, 7);
+$red: #E74C3C;
+$grey: #5f5f5f;
+$grey-mid: #777777;
+$grey-middle: #838383;
+$grey-light: #949494;
+$grey-x-light: #dcdcdc;
+$divider: $grey-x-light;
+$border: #b7b7b7;
+$white: #fff;
+$subwhite: #f8f8f8;
+$subberwhite: #f2f2f2;
+
+
+
+// mixins
+
+@mixin ratio($percentual-height){
+    // Wrapper
+    position: relative;
+    vertical-align: top;
+    &:before { 
+      padding-top:$percentual-height; 
+      content: '';
+      display: block;            
+    }
+    // Content
+    // > * { position: absolute; 
+  //   //   top: 0; left: 0; bottom: 0; right: 0; 
+  // }
+}
+
+@mixin size($width, $height:$width) {
+    width: #{$width}px;
+    height: #{$height}px;
+}
+
+@mixin clearfix-dk {
+
+  &:before,
+  &:after {
+      content:"";
+      display:table;
+  }
+  &:after {
+      clear:both;
+  }
+
+}
+
+@mixin ellipsis($width: 100%) {
+    display: inline-block;
+    max-width: $width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+@mixin hypens($opt) {
+    -webkit-hyphens:$opt;
+    -moz-hyphens:$opt;
+    -o-hyphens:$opt;
+    hyphens:$opt;
+}
+
+@mixin user-select($opt) {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin linear-gradient($fromColor, $toColor) {
+    background-color: $toColor; /* Fallback Color */
+    background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+    background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, $fromColor, $toColor);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+    }
+
+@mixin appearance($appearance:none) {
+    -webkit-appearance: $appearance;
+    -moz-appearance: $appearance;
+    -ms-appearance: $appearance;
+    -o-appearance: $appearance;  
+    appearance: $appearance;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transform:none) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+
+
+@mixin arrow_helper($arrowSize, $arrowColor, $margin, $side, $align) {
+  @if $side == "top" {
+    border-bottom-color: $arrowColor;
+    top: -2 * $arrowSize;
+  }
+  @if $side == "bottom" {
+    border-top-color: $arrowColor;
+    bottom: -2 * $arrowSize;
+  }
+  @if $side == "left" {
+    border-right-color: $arrowColor;
+    left: -2 * $arrowSize;
+  }
+  @if $side == "right" {
+    border-left-color: $arrowColor;
+    right: -2 * $arrowSize;
+  }
+  @if $side == "right" or $side == "left" {
+    @if $align == "center" {
+      top: 50%;
+      margin-top: -$arrowSize;
+    }
+    @else if $align == "top" {
+      top: $margin;
+    }
+    @else if $align == "bottom" {
+      bottom: $margin;
+    }
+  }
+  @if $side == "bottom" or $side == "top" {
+    @if $align == "center" {
+      right: 50%;
+      margin-right: -$arrowSize;
+    }
+    @else if $align == "left" {
+      left: $margin;
+    }
+    @else if $align == "right" {
+      right: $margin;
+    }
+  }
+}
+
+@mixin arrow($side: "right", $align: "center", $size: 20px, $color: #f6f6f6, $borderColor: "none", $borderSize: 3px) {
+  $selector: "&:after, &:before";
+  @if $borderColor == "none" {
+    $selector: "&:after";
+  }
+  #{$selector} {
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    visibility: visible;
+  }
+  
+  &:after {
+    border-width: $size;
+    @include arrow_helper($size, $color, $size, $side, $align);
+  }
+  
+  @if $borderColor != "none" {
+    &:before {
+      border-width: $borderSize + $size;
+      @include arrow_helper($size + $borderSize, $borderColor, $size - $borderSize, $side, $align);
+    }
+  }
+}
+
+
+//functions
+
+@function perc($target, $parent) {
+    @return $target / $parent * 100%;
+}
+
+@function golden($target) {
+    @return #{$target * 1.618}px;
+}
+
+@function golden-down($target) {
+    @return #{$target / 1.618}px;
+}
+
+
+
+
+//Easings 
+
+// EASE IN
+$ease-in-quad: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+$ease-in-cubic: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+$ease-in-quart: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+$ease-in-quint: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+$ease-in-sine: cubic-bezier(0.470, 0.000, 0.745, 0.715);
+$ease-in-expo: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+$ease-in-circ: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+$ease-in-back: cubic-bezier(0.600, -0.280, 0.735, 0.045);
+// EASE OUT
+$ease-out-quad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+$ease-out-cubic: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+$ease-out-quart: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$ease-out-quint: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$ease-out-sine: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+$ease-out-expo: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$ease-out-circ: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+// EASE IN OUT
+$ease-in-out-quad: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+$ease-in-out-quart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+$ease-in-out-quint: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+$ease-in-out-sine: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+$ease-in-out-expo: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+$ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+$ease-in-out-back: cubic-bezier(0.680, -0.550, 0.265, 1.550);

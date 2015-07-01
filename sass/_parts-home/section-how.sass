@@ -1,0 +1,123 @@
+.section-four
+  width: 100%
+  height: 335px
+  background-image: url(../img/img-office.jpg)
+  background-size: cover
+  background-position: 50% 20%
+  color: $white
+  +m(820)
+    height: 400px
+
+  +m(580)
+    height: 780px
+
+.steps-section-wrap
+  width: 100%
+  max-width: 1650px
+  height: 100%
+  +center
+
+.steps-section-title,
+.steps
+  //	Both Block
+  float: left
+  height: 100%
+  +m(820)
+    float: none
+    height: auto
+    +center
+
+.steps-section-title
+  width: 39%
+  font-size: 56px
+  font-weight: 400
+  text-align: center
+  +m(920)
+    width: 36%
+    font-size: 50px
+
+  +m(820)
+    width: 100%
+    padding: 65px 0 110px
+
+  +m(580)
+    padding: 65px 0 50px
+
+  .steps-section-title-wrap
+    display: block
+    position: relative
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    transform: translateY(-50%)
+    +m(820)
+      +unvalign
+
+.steps
+  width: 58%
+  +m(920)
+    width: 64%
+
+  +m(820)
+    width: 90%
+    padding-top: 10px
+
+.steps-wrap
+  position: relative
+  top: 55%
+  -webkit-transform: translateY(-50%)
+  -o-transform: translateY(-50%)
+  transform: translateY(-50%)
+  text-align: center
+  +clearfix
+
+.step-group
+  float: left
+  width: 33.333%
+  position: relative
+
+  .js &
+    opacity: 0
+
+.step-text
+  font-size: 27px
+  font-weight: 400
+  padding-top: 31px
+
+.step-icon
+  +center
+
+.icon-apply
+  +size(83, 88)
+  &:before
+    font-size: 87px
+
+.icon-approve
+  +size(89, 88)
+  &:before
+    font-size: 89px
+
+.icon-fund
+  +size(90, 88)
+  &:before
+    top: -4px
+    font-size: 94px
+
++m(920)
+  .step-group
+    opacity: 1 !important
+    margin-top: 0 !important
+  .step-text
+    font-size: 25px
+
+
++m(580)
+  .steps-wrap
+    +unvalign
+  .step-group
+    float: none
+    width: 90%
+    margin: 0 auto 50px !important
+  .step-text
+    font-size: 27px
+    padding-top: 22px

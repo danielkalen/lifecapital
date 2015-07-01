@@ -1,0 +1,166 @@
+.md-modal {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 433px;
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+    cursor: default;
+
+
+        // > .wrap {
+        //     position: relative;
+        //     padding-top: 35px;
+        // }
+
+        .icon-cross {
+            position: absolute;
+            top: 14px;
+            right:14px;
+            @include size(12);
+            font-size: 12px;
+            color: #fff;
+            cursor: pointer;
+
+        }
+
+        &.hide {
+            // display: none;
+        }
+
+    // @media screen and (max-height:700px) {
+    //     height: 100vh;
+    //     overflow: visible;
+    //     max-height: 86vh;
+    //     top: 48%;
+    //     overflow: scroll;
+    //     overflow-x: visible;
+    // }
+}
+
+.md-show {
+    visibility: visible;
+}
+
+.md-overlay {
+    position: fixed;
+    width: 100%;
+    height: 150%;
+    max-height: 100vh;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.modal-open .md-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.md-content {
+    position: relative;
+	color: #3b3b3b;
+	background: #fff;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+
+
+        .img {
+            width: 100%;
+            height: 195px;
+            background-size: cover;
+
+                .title-modal {
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    width: 90%;
+                    margin: 0 auto;
+                    font-size: 25px;
+                    font-weight: 300;
+                    color: $white;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                        span {
+                            font-weight: 700;
+                        }
+                }
+        }
+
+            .img-monaco-modal {
+                background-image: url(../img/img-monaco-modal.jpg);
+            }
+            .img-sunflower-modal {
+                background-image: url(../img/img-sunflower-modal.jpg);
+            }
+            .img-rue-modal {
+                background-image: url(../img/img-rue-modal.jpg);
+            }
+
+        .desc {
+            padding: 30px;
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 400;
+            box-sizing: border-box;
+
+            @media screen and (max-height:700px) {
+                max-height: 280px;
+                padding-bottom: 30px;
+                box-sizing: border-box;
+                overflow-y: scroll;
+                // -webkit-overflow-scrolling: touch;
+            }
+        }
+}
+
+
+.md-effect-5.md-modal {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.md-effect-5 .md-content {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(600px) rotateX(20deg); 
+	-moz-transform: translateZ(600px) rotateX(20deg); 
+	-ms-transform: translateZ(600px) rotateX(20deg); 
+	transform: translateZ(600px) rotateX(20deg); 
+	opacity: 0;
+}
+
+.md-show.md-effect-5 .md-content {
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	-webkit-transform: translateZ(0px) rotateX(0deg);
+	-moz-transform: translateZ(0px) rotateX(0deg);
+	-ms-transform: translateZ(0px) rotateX(0deg);
+	transform: translateZ(0px) rotateX(0deg); 
+	opacity: 1;
+}
