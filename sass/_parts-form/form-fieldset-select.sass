@@ -1,0 +1,31 @@
+&-select
+	+field
+	height: 55px
+	width: 100%
+	margin-top: 10px
+	padding: 0 38px 0 10px
+	cursor: pointer
+
+	.error &
+		border-color: $error-color
+
+	.focus &
+		border-color: $contrast
+		color: $primary
+
+
+&.select
+	position: relative
+	cursor: pointer
+
+	&:before
+		+icon('l')
+		position: absolute
+		// +valign
+		// top: 0
+		bottom: 17px
+		right: 15px
+		display: block
+		width: 15px
+		font-size: 22px
+		color: $grey-mid

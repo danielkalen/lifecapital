@@ -1,0 +1,58 @@
+&.range
+	// height: 41px
+	height: 71px
+	// &.sales
+	// 	margin-top: 67px
+
+&-range
+	width: perc(365, 444)
+	+center
+
+	&-start
+		position: absolute
+		top: 0
+		left: 0
+		+size(12)
+		background: $primary
+		border-radius: 50%
+		&:after
+			content: '$0'
+			position: absolute
+			top: 27px
+			left: -5px
+			font-size: 16px
+			font-weight: 600
+			color: $border
+			opacity: 1
+			transition: opacity .1s
+
+			.hide_start &
+				opacity: 0
+	&-end
+		position: absolute
+		top: 0
+		right: 0
+		+size(12)
+		background: $border
+		border-radius: 50%
+
+		
+		&:after
+			position: absolute
+			top: 27px
+			font-size: 16px
+			font-weight: 600
+			color: $border
+			opacity: 1
+			transition: opacity .1s
+			
+			.hide_end &
+				opacity: 0
+
+			.volume &
+				content: '$150,000'
+				right: -26px
+			.sales &
+				content: '$950,000'
+				right: -28px
+

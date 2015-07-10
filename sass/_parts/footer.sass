@@ -1,156 +1,230 @@
 /* ==========================================================================
-   Footer
-   ========================================================================== */
+	 Footer
+	 ========================================================================== */
 
 
-footer
-  background-color: $subberwhite
-  padding-top: 20px
-  color: $border
-  font-size: 15px
-  font-weight: 600
-  .wrap
-    width: 90%
-    max-width: 1170px
-    margin: 0 auto
-    padding: 32px 0
-    border-top: 1px solid $border
-    +clearfix
-    .footer-section:nth-child(1)
-      width: 45%
-    .footer-section:nth-child(2)
-      width: 55%
-    .footer-section
-      float: left
-      @media screen and (max-width: 920px)
-        width: 90% !important
-        float: none
-        clear: both
-        +center
-      &-copyright
-        +clearfix
-        +m(920)
-          position: relative
-          width: 363px
-          +center
-          left: -12px
+.footer
+	background-color: $subberwhite
+	padding-top: 20px
+	color: $border
+	font-size: 15px
+	font-weight: 600
 
-        +m(480)
-          width: 290px
-          left: 0
+	&-wrap
+		width: 90%
+		max-width: 1170px
+		+center
+		padding: 32px 0
+		border-top: 1px solid $border
+		+clearfix
 
-        +m(330)
-          left: -10px
+	&-section
+		float: left
+		
+		+max(920)
+			width: 90% !important
+			float: none
+			clear: both
+			+center
 
-        .logo-footer
-          float: left
-      &-contact
-        clear: both
-        +clearfix
-        &-phone,
-        &-address,
-        &-email
-          clear: both
-          +m(920)
-            text-align: center
-            margin-bottom: 10px
-        .social-icon
-          float: left
-          margin-right: 8px
-          +m(920)
-            float: none
-            text-align: center
-        &-phone
-          // padding-top: 15px;
-          .social-icon
-            margin-right: 5px
-            font-size: 19px
-        &-address
-          padding-top: 10px
-          .social-icon
-            padding-top: 1px
-            font-size: 17px
-            margin-right: 7px
-        &-email
-          padding-top: 8px
-          padding-bottom: 25px
-          .social-icon
-            font-size: 15px
-            &:before
-              position: relative
-              top: 1px
-      &-social
-        +clearfix
-        margin-top: -10px
-        +m(920)
-          width: 208px
-          +center
-          margin-top: 25px
+		&.info
+			width: 45%
+		&.links
+			width: 55%
 
-        &-item
-          &:nth-child(2)
-            margin-left: 0
-          &-link
-            display: block
-            +clearfix
-            &-text
-              margin-left: 30px
-          .social-icon
-            background-color: $border
-            +size(23)
-            border-radius: 50%
-            float: left
-            top: -3px
-            &:before
-              color: $subberwhite
-              top: 5px
-              left: 0
-              right: 0
-              font-size: 13px
-              text-align: center
-      &-links
-        +clearfix
-        margin-top: 5px
-        +m(920)
-          width: 388px
-          +center
-          margin-top: 10px
-          li:nth-child(3)
-            margin-left: 0
 
-        +m(480)
-          width: 100%
-          li
-            float: none
-            margin-left: 0
-    .copyright
-      float: left
-      padding-top: 19px
-      margin-left: 20px
-      span
-        font-family: helvetica, arial, sans-serif
-        font-weight: 700
-        font-size: 16px
-      +m(480)
-        // margin-left: 15px;
-        // font-size: 14px;
-        padding-top: 10px
-        display: block
-        width: 210px
-    ul
-      +m(920)
-        float: none
-        clear: both
-        // width: 250px;
-        +clearfix
-        text-align: center
+		&-contact
+			+clearfix
 
-      li
-        float: right
-        margin: 15px 0 0 24px
-  a
-    color: $border
-    &:hover
-      text-decoration: underline
+			&-item
+				padding-top: 10px
+
+				
+				+max(920)
+					text-align: center
+					margin-bottom: 10px
+				
+				&:first-child
+					padding-top: 0
+
+				&-text
+					color: $border
+
+				&-icon
+					float: left
+					margin-right: 8px
+					
+					+max(920)
+						float: none
+						text-align: center
+
+					&:after
+
+						.phone &
+							+icon('c')
+							margin-right: 5px
+							font-size: 19px
+							font-family: lccons-social
+							font-weight: 400
+							cursor: default
+
+						.email &
+							+icon('e')
+							position: relative
+							top: 1px
+							left: 1px
+							margin-right: 7px
+							font-size: 15px
+							font-family: lccons-social
+							font-weight: 400
+							cursor: default
+
+						.address &
+							+icon('d')
+							position: relative
+							top: 1px
+							margin-right: 7px
+							font-size: 17px
+							font-family: lccons-social
+							font-weight: 400
+							cursor: default
+				
+
+
+		&-copyright
+			position: relative
+			margin-top: 25px
+			+clearfix
+
+			+max(920)
+				position: relative
+				width: 363px
+				+center
+				left: -12px
+
+			+max(480)
+				width: 290px
+				left: 0
+
+			+max(330)
+				left: -10px
+
+			&-logo
+				display: block
+
+			&-text
+				position: absolute
+				+valign
+				left: 72px
+
+				+max(480)
+					padding-top: 10px
+					width: 210px
+
+				&-strong
+					display: inline
+					font-family: helvetica, arial, sans-serif
+					font-weight: 700
+					font-size: 16px
+
+
+
+
+
+		&-social
+			// margin-top: -10px
+			+clearfix
+
+			+max(920)
+				width: 208px
+				+center(25px)
+
+			&-item
+				float: right
+				margin-left: 24px
+				
+				&:last-child
+					margin-left: 0
+
+				&-link
+					display: block
+					+clearfix
+
+					&:hover &-text
+						text-decoration: underline
+
+					&-text
+						position: relative
+						margin-left: 30px
+						padding-top: 5px
+						line-height: 1
+						color: $border
+
+
+
+					&-icon
+						position: relative
+						float: left
+						+size(23)
+						background-color: $border
+						border-radius: 50%
+
+						&:after
+							position: absolute
+							+valign(48%)
+							width: 100%
+							font-size: 13px
+							text-align: center
+							color: $subberwhite
+
+							.linkedin &
+								+icon('b')
+								font-family: lccons-social
+								font-weight: 400
+								cursor: pointer
+							.facebook &
+								+icon('a')
+								font-family: lccons-social
+								font-weight: 400
+								cursor: pointer
+
+
+
+
+
+		&-policies
+			margin-top: 20px
+			+clearfix
+
+			+max(920)
+				width: 388px
+				+center
+				margin-top: 10px
+				&-item:nth-child(3)
+					margin-left: 0
+
+			+max(480)
+				width: 100%
+				&-item
+					float: none
+					margin-left: 0
+
+
+			&-item
+				float: right
+				// margin: 15px 0 0 24px
+				margin-left: 24px
+				
+				+max(920)
+					text-align: center
+				
+
+				&-link
+					color: $border
+
+				&:hover
+					text-decoration: underline
+
+
 
 /* ==========================================================================

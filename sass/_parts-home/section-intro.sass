@@ -8,20 +8,12 @@
 
 
 	&-text
-		width: 90%
-		+center
-
 		.intro &
 			padding-top: 125px
 
+			+max(736)
+				padding-top: 80px
 
-	&-subtitle
-		max-width: 538px
-		+center
-		padding-top: 17px
-		font-size: 18px
-		text-align: center
-		color: $grey
 
 
 
@@ -89,6 +81,9 @@
 			font-weight: 400
 			color: $primary
 
+			+max(736)
+				font-size: 26px
+
 			+max(580)
 				max-width: 370px
 				+center
@@ -100,6 +95,9 @@
 			font-size: 18px
 			font-weight: 400
 			color: $grey-light
+
+			+max(736)
+				font-size: 16px
 			
 			+max(580)
 				max-width: 370px

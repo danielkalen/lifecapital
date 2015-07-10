@@ -1,0 +1,131 @@
+&-buttons
+	max-height: 97px
+	+clearfix
+
+	&-item 
+		width: 100%
+		height: 87px
+		float: left
+		background-color: $subwhite
+		border-radius: 0 0 3px 3px
+		border-top: 1px solid $border
+		overflow: hidden
+		cursor: pointer
+		// transition: background-color 0.2s, width 0.8s $ease-in-out-quint
+		transition: background-color 0.2s
+
+		&-text
+			width: 100%
+			position: relative
+			+valign
+			line-height: 1
+			font-size: 19px
+			font-weight: 700
+			text-transform: uppercase
+			text-align: center
+			color: $border
+			transition: color 0.2s
+			+user-select(none)
+			
+			+max(420)
+				font-size: 18px
+
+			.call &
+				font-size: 14px
+				color: $border !important
+				width: 180px
+				+center
+
+				+max(420)
+					width: 80%
+
+			.call.submit &
+				color: $white !important
+				font-size: 19px
+				width: 300px
+
+			.apply &
+				width: 150px
+				+center
+			.calculate &
+				width: 250px
+				+center
+
+			
+			&-hidden // 'Calculating' Text
+				position: absolute
+				+valign
+				left: 24px
+				right: 0
+				opacity: 0
+
+			&-icon
+				position: relative
+				display: block
+				+center
+				top: -1px
+				+size(27,26)
+				color: white
+
+				&:after
+					position: absolute
+					+icon('i')
+					font-size: 25px
+					left: 0
+					top: 0
+					text-transform: none
+
+		&:hover,
+		.ready &
+			background-color: $contrast
+			border-top-color: $contrast
+		&:hover &-text,
+		.ready &-text
+			color: $white
+
+
+		.ready &:hover,
+		&.active
+			background-color: $primary
+			border-top-color: $primary
+		
+
+		
+		&.call
+			display: block
+			width: 0
+			background-color: $subwhite
+			border-top-color: $border
+			border-radius: 0 0 3px 0
+
+			&:hover
+				background-color: darken($subwhite, 3)
+				border-top-color: $border
+
+			&.submit
+				background-color: $contrast
+				border-top-color: $contrast
+
+				&:hover
+					background-color: $primary
+
+
+// .button.call
+
+// 	form.three-enter &:hover
+// 		background-color: $contrast !important
+// 		border-top-color: $contrast !important
+// 		p
+// 			color: $white !important
+// 	form.three-exit & p
+// 		font-size: 19px !important
+// 	form.ready.three-enter &
+// 		background-color: $contrast !important
+// 		border-top-color: $contrast !important
+// 		p
+// 			color: $white !important
+// 	form.ready.three-enter &:hover
+// 		background-color: $primary !important
+// 		border-top-color: $primary !important
+// 		p
+// 			color: $white !important

@@ -1,123 +1,133 @@
-.section-four
-  width: 100%
-  height: 335px
-  background-image: url(../img/img-office.jpg)
-  background-size: cover
-  background-position: 50% 20%
-  color: $white
-  +m(820)
-    height: 400px
+.how
+	width: 100%
+	height: 335px
+	background-image: url(../img/img-office.jpg)
+	background-size: cover
+	background-position: 50% 20%
+	color: $white
+	
+	+max(820)
+		height: 400px
 
-  +m(580)
-    height: 780px
+	+max(520)
+		height: 780px
 
-.steps-section-wrap
-  width: 100%
-  max-width: 1650px
-  height: 100%
-  +center
+	&-steps
+		position: relative
+		width: 100%
+		max-width: 1650px
+		height: 100%
+		+center
 
-.steps-section-title,
-.steps
-  //	Both Block
-  float: left
-  height: 100%
-  +m(820)
-    float: none
-    height: auto
-    +center
+		&-title
+			position: relative
+			float: left
+			height: 100%
+			width: 39%
+			font-size: 56px
+			font-weight: 400
+			text-align: center
 
-.steps-section-title
-  width: 39%
-  font-size: 56px
-  font-weight: 400
-  text-align: center
-  +m(920)
-    width: 36%
-    font-size: 50px
+			+max(920)
+				width: 36%
+				font-size: 50px
+			+max(820)
+				width: 100%
+				float: none
+				height: auto
+				+center
+				padding: 60px 0 48px
+			// 	padding: 65px 0 110px
+			// +max(520)
+			// 	padding: 65px 0 50px
 
-  +m(820)
-    width: 100%
-    padding: 65px 0 110px
+			&-text
+				position: absolute
+				width: 100%
+				left: 0
+				right: 0
+				+valign
 
-  +m(580)
-    padding: 65px 0 50px
+				+max(820)
+					position: relative
+					+unvalign
 
-  .steps-section-title-wrap
-    display: block
-    position: relative
-    top: 50%
-    -webkit-transform: translateY(-50%)
-    -o-transform: translateY(-50%)
-    transform: translateY(-50%)
-    +m(820)
-      +unvalign
+		&-list
+			float: left
+			height: 100%
+			width: 58%
 
-.steps
-  width: 58%
-  +m(920)
-    width: 64%
+			+max(920)
+				width: 64%
 
-  +m(820)
-    width: 90%
-    padding-top: 10px
+			+max(820)
+				width: 90%
+				padding-top: 10px
 
-.steps-wrap
-  position: relative
-  top: 55%
-  -webkit-transform: translateY(-50%)
-  -o-transform: translateY(-50%)
-  transform: translateY(-50%)
-  text-align: center
-  +clearfix
+			+max(520)
+				float: none
+				height: auto
+				+center
 
-.step-group
-  float: left
-  width: 33.333%
-  position: relative
+			&-wrap
+				position: relative
+				+valign(55%)
+				text-align: center
+				+clearfix
 
-  .js &
-    opacity: 0
-
-.step-text
-  font-size: 27px
-  font-weight: 400
-  padding-top: 31px
-
-.step-icon
-  +center
-
-.icon-apply
-  +size(83, 88)
-  &:before
-    font-size: 87px
-
-.icon-approve
-  +size(89, 88)
-  &:before
-    font-size: 89px
-
-.icon-fund
-  +size(90, 88)
-  &:before
-    top: -4px
-    font-size: 94px
-
-+m(920)
-  .step-group
-    opacity: 1 !important
-    margin-top: 0 !important
-  .step-text
-    font-size: 25px
+				+max(520)
+					+unvalign
 
 
-+m(580)
-  .steps-wrap
-    +unvalign
-  .step-group
-    float: none
-    width: 90%
-    margin: 0 auto 50px !important
-  .step-text
-    font-size: 27px
-    padding-top: 22px
+			&-item
+				position: relative
+				float: left
+				width: 33.33%
+
+				.js &
+					+transform(translateY(-50px))
+					opacity: 0
+
+					+max(920)
+						opacity: 1 !important
+						+transform(translateY(0) !important)
+
+				+max(580)
+					float: none
+					width: 90%
+					+center(0, 50px)
+
+
+				&-icon
+					+center
+
+					.apply &
+						+size(83, 88)
+						&:before
+							+icon('b')
+							font-size: 87px
+
+					.approve &
+						+size(89, 88)
+						&:before
+							+icon('a')
+							font-size: 89px
+
+					.fund &
+						+size(90, 88)
+						&:before
+							+icon('c')
+							font-size: 94px
+							position: relative
+							top: -4px
+
+
+				&-text
+					padding-top: 27px
+					font-size: 27px
+					font-weight: 400
+					line-height: 1
+
+					+max(920)
+						font-size: 25px
+						padding-top: 23px

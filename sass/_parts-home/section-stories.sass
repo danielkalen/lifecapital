@@ -1,6 +1,9 @@
 .stories
 	padding: 0 0 133px
 
+	+max(736)
+		padding: 0 0 76px
+
 
 .section-title
 	.stories &
@@ -12,9 +15,13 @@
 			+center
 			padding: 110px 0 40px
 
+
 	&-text
 		.stories &
 			font-size: 40px
+			
+			+max(736)
+				font-size: 32px
 
 
 .stories-list
@@ -155,3 +162,25 @@
 
 
 		@import section-stories-modal
+
+
+.modal-overlay
+	position: fixed
+	width: 100%
+	height: 150%
+	max-height: 100vh
+	visibility: hidden
+	top: 0
+	left: 0
+	z-index: 1000
+	opacity: 0
+	background: rgba(0, 0, 0, 0.8)
+	-webkit-transition: all 0.3s
+	-moz-transition: all 0.3s
+	transition: all 0.3s
+	cursor: pointer
+	overflow: hidden
+
+	.modal-open &
+		opacity: 1
+		visibility: visible

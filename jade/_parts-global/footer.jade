@@ -1,35 +1,45 @@
 footer.footer(role='footer')
-  .wrap
-    .footer-section
+  .footer-wrap
+    
+    .footer-section.info
       .footer-section-contact
-        .footer-section-contact-phone
-          .social-icon.soc-icon-phone
-          a.footer-section-contact-phone-link(href='tel:212-390-8877') (212) 390-8877
-        .footer-section-contact-address
-          .social-icon.soc-icon-address
-          | 42 Broadway, New York NY 10004
-        .footer-section-contact-email
-          .social-icon.soc-icon-email
-          a.footer-section-contact-email-link(href='mailto:info@mylifecapital.com') info@mylifecapital.com
+        
+        .footer-section-contact-item.phone
+          .footer-section-contact-item-icon
+          a.footer-section-contact-item-text(href='tel:212-390-8877') (212) 390-8877
+        
+        .footer-section-contact-item.address
+          .footer-section-contact-item-icon
+          .footer-section-contact-item-text 42 Broadway, New York NY 10004
+        
+        .footer-section-contact-item.email
+          .footer-section-contact-item-icon
+          a.footer-section-contact-item-text(href='mailto:info@mylifecapital.com') info@mylifecapital.com
+
       .footer-section-copyright
-        .logo-footer
-          img(src='img/logo-footer.png', width='54', height='54', alt='Life Capital', title='Life Capital Logo Small')
-        p.copyright
-          | Copyright 
-          span ©
+        img.footer-section-copyright-logo(src='img/logo-footer.png', width='54', height='54', alt='Life Capital Footer Logo', title='Life Capital')
+        .footer-section-copyright-text Copyright 
+          .footer-section-copyright-text-strong ©
           |  2015 Life Capital Partners, Inc.
-    .footer-section
+    
+
+    .footer-section.links
       ul.footer-section-social
-        li.footer-section-social-item
+
+        li.footer-section-social-item.facebook
           a.footer-section-social-item-link(href='http://facebook.com/mylifecapital')
-            .social-icon.soc-icon-facebook
+            .footer-section-social-item-link-icon
             .footer-section-social-item-link-text Facebook
-        li.footer-section-social-item
+
+        li.footer-section-social-item.linkedin
           a.footer-section-social-item-link(href='http://linkedin.com/company/mylifecapital')
-            .social-icon.soc-icon-linkedin
+            .footer-section-social-item-link-icon
             .footer-section-social-item-link-text Linkedin
-      ul.footer-section-links
-        li
-          a(href='terms.html') Terms &amp; Conditions
-        li
-          a(href='policy.html') Privacy Policy
+
+
+
+      ul.footer-section-policies
+        li.footer-section-policies-item
+          a.footer-section-policies-item-link(href='terms.html') Terms &amp; Conditions
+        li.footer-section-policies-item
+          a.footer-section-policies-item-link(href='policy.html') Privacy Policy

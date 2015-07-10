@@ -1,0 +1,106 @@
+&.radio
+	+clearfix
+
+&-radio
+	+field
+	position: relative
+	float: left
+	height: 55px
+	width: 100%
+	height: 55px
+	margin-left: perc(15, 444)
+	font-size: 16px
+	color: $grey
+	// transition: all 0.1s
+	cursor: pointer
+	box-sizing: border-box
+	+user-select(none)
+
+	&:nth-child(2)
+		margin-left: 0
+
+	// ==== Varients =================================================================================
+	.radio_special &
+		height: 70px
+
+	.options_5 &
+		width: perc(76.68, 444)
+	.options_3 &
+		width: perc(138, 444)
+	.additional_partners &
+		width: perc(76.68, 444)
+
+	.disabled &
+		cursor: default
+
+
+
+	// ==== States =================================================================================
+	&.checked
+		border-color: $contrast
+		&:before
+			content: ''
+			position: absolute
+			z-index: 1
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			height: 100%
+			border: 1px solid $contrast
+			box-sizing: content-box
+			box-sizing: border-box
+
+	.error &
+		border-color: $error-color
+
+	.focus &
+		border-color: $contrast
+		color: $primary
+
+
+
+
+	&-label
+		position: absolute
+		+valign
+		font-weight: 600
+		width: 100%
+		text-align: center
+		cursor: pointer
+
+		+max(520)
+			font-size: 15px
+		+max(420)
+			font-size: 14px
+
+		.disabled & // Term length options
+			font-size: 15px
+			color: $grey-mid
+			cursor: default
+
+			&:before
+				+icon('j')
+				position: relative
+				top: 5px
+				font-size: 21px
+				font-weight: 400
+				padding-right: 5px
+				line-height: 0
+
+				.checked &
+					content: 'k'
+
+
+		.checked &
+			// color: $primary
+			color: $contrast
+
+		.radio_special &
+			font-size: 18px
+			line-height: 1.15
+
+
+		&-sub
+			font-size: 12px
+			text-transform: uppercase

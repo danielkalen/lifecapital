@@ -4,34 +4,42 @@
 
 $('.stories-list-item').click(function(){
 		$this = $(this);
-	var $thisModal = $this.find('.stories-list-item-modal')
+	var $thisModal = $this.find('.stories-list-item-modal');
 
-	$thisModal.addClass('show');
-	$$('body').addClass('modal-open')
+	openModal($thisModal)
 
-	$$('body').keydown(function(e) {
+	$$('body').on('keydown', function(e) {
+
 		if (e.keyCode == 27) {
 			(e).stopPropagation();
-			$$('body').removeClass('modal-open');
-			$thisModal.removeClass('show');
+
+			closeModal();
+
+			$$('body').off('keydown');
 		}
 	});
 });
-$$('.terms-link').click(function(){
-	var $this = $(this).parent().siblings('.stories-list-item-modal');
-
-	$this.addClass('show');
-	$$('body').addClass('modal-open');
-});
 
 
 
-$$('.md-overlay, .stories-list-item-content-close').click(function(e){
+$$('.modal-overlay, .modal-close').click(function(e){
 	(e).stopPropagation();
-	$(this).parents('.stories-list-item-modal').removeClass('show');
-	$$('body').removeClass('modal-open');
+
+	closeModal();
 });
 
+
+
+
+var openModal = function($modal){
+	$modal.addClass('show');
+	$$('body').addClass('modal-open');
+}
+
+var closeModal = function(){
+	$$('.modal').removeClass('show');
+	$$('body').removeClass('modal-open');
+}
 
 
 /* ========================================================================== */

@@ -26,3 +26,9 @@ ExpiresDefault "access 9 days"
     Header append Vary: Accept-Encoding
   </FilesMatch>
 </IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^webform$ php/webform.php
+RewriteRule ^callform$ php/callform.php
+</IfModule>

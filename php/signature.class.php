@@ -30,8 +30,8 @@ class signature {
     
     // creates the image (if dir is writable)
     function make_signature(){
-        if(isset($_POST['img'])){
-            $arr = explode(',',$_POST['img']);
+        if(isset($_POST['signature-img'])){
+            $arr = explode(',',$_POST['signature-img']);
             $this->image = "image{$this->hash}.png";
             if(is_writable(dirname(__FILE__))){
                 file_put_contents($this->image, base64_decode($arr[1]));
@@ -48,9 +48,9 @@ class signature {
     
     // embeds the signature in a html file
     function embed_in_html($filename){
-        if(isset($_POST['sign'])){
+        if(isset($_POST['signature-data'])){
             if(is_writable(dirname(__FILE__))){
-                file_put_contents($filename.'.html', '<html></html><body><img src="'.$_POST['sign'].'" /></body>');
+                file_put_contents($filename.'.html', '<html></html><body><img src="'.$_POST['signature-data'].'" /></body>');
             }else{
                 die('<p>The working directory is not writable, abort.</p>');
             }

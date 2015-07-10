@@ -1,13 +1,39 @@
-.section-five
-  min-height: 1070px
-  padding-bottom: 170px
-  +m(680)
-    min-height: 900px
 
-  h2
-    padding-top: 145px
-  .subtitle
-    max-width: 380px
+.section-title
+	.cta &
+		padding-top: 128px
+
+		+max(736)
+			padding-top: 75px
+
+	&-subtitle
+		.cta &
+			max-width: 380px
 
 
-@import ../_parts-form/form
+
+.cta
+	min-height: 1070px
+	padding-bottom: 170px
+	+max(680)
+	min-height: 900px
+
+	&-skip
+		width: 90%
+		max-width: 520px
+		+center(40px)
+		font-size: 14px
+		text-align: center
+		color: $grey-mid
+
+		&-link
+			color: $primary
+			cursor: pointer
+	
+			&:hover
+				text-decoration: underline
+
+
+	@import ../_parts-form/form
+
+

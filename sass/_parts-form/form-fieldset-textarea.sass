@@ -1,0 +1,26 @@
+&-textarea
+	+field
+	height: 90px
+	width: 100%
+	position: relative
+	padding: 12px 15px
+	margin-top: 10px
+	font-size: 16px
+	color: $grey
+	transition: all 0.1s
+
+	.error &
+		border-color: $error-color
+
+	&:focus
+		border-color: $contrast
+		color: $primary
+	
+	::-webkit-input-placeholder
+		color: #878787
+	:-moz-placeholder
+		color: #878787
+	::-moz-placeholder
+		color: #878787
+	:-ms-input-placeholder
+		color: #878787
