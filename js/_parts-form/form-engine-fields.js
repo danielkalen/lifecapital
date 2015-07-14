@@ -134,7 +134,7 @@ $.fn.formPrepare.rangeField = function($field) {
 	// ==== Range Events =================================================================================
 
 	// Handle Touch
-	$('.noUi-handle').on('mousedown', function(){
+	$('.noUi-handle').on('mousedown touchstart', function(){
 		var $this = $(this);
 
 		$window.one('mousemove', function(){
@@ -152,7 +152,7 @@ $.fn.formPrepare.rangeField = function($field) {
 	});
 
 	// Base click
-	$('.noUi-base').on('mousedown', function(e){
+	$('.noUi-base').on('mousedown touchstart', function(e){
 		if ( !$(e.target).hasClass('noUi-handle') ) {
 			$(this).find('.noUi-handle div').trigger('modified');
 		}

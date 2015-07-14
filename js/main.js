@@ -16,7 +16,8 @@ $$('html').removeClass('no-js')
 
 var $window = $(window),
 	$this,
-	isDragging
+	isDragging,
+	isMobile = window.innerWidth <= 736
 	;
 
 

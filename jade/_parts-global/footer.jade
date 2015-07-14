@@ -19,7 +19,8 @@ footer.footer(role='footer')
       .footer-section-copyright
         img.footer-section-copyright-logo(src='img/logo-footer.png', width='54', height='54', alt='Life Capital Footer Logo', title='Life Capital')
         .footer-section-copyright-text Copyright 
-          .footer-section-copyright-text-strong ©
+          //- .footer-section-copyright-text-strong ©
+          .footer-section-copyright-text-strong
           |  2015 Life Capital Partners, Inc.
     
 
@@ -27,12 +28,12 @@ footer.footer(role='footer')
       ul.footer-section-social
 
         li.footer-section-social-item.facebook
-          a.footer-section-social-item-link(href='http://facebook.com/mylifecapital')
+          a.footer-section-social-item-link(href='http://facebook.com/mylifecapital', target="_blank")
             .footer-section-social-item-link-icon
             .footer-section-social-item-link-text Facebook
 
         li.footer-section-social-item.linkedin
-          a.footer-section-social-item-link(href='http://linkedin.com/company/mylifecapital')
+          a.footer-section-social-item-link(href='http://linkedin.com/company/mylifecapital', target="_blank")
             .footer-section-social-item-link-icon
             .footer-section-social-item-link-text Linkedin
 
@@ -40,6 +41,6 @@ footer.footer(role='footer')
 
       ul.footer-section-policies
         li.footer-section-policies-item
-          a.footer-section-policies-item-link(href='terms.html') Terms &amp; Conditions
+          a.footer-section-policies-item-link(href='/terms') Terms &amp; Conditions
         li.footer-section-policies-item
-          a.footer-section-policies-item-link(href='policy.html') Privacy Policy
+          a.footer-section-policies-item-link(href='/policy') Privacy Policy

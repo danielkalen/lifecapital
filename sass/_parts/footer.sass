@@ -98,34 +98,44 @@
 
 			+max(920)
 				position: relative
+				top: 95px
 				width: 363px
-				+center
+				+center(52px)
 				left: -12px
 
-			+max(480)
+			+max(520)
 				width: 290px
 				left: 0
 
-			+max(330)
+			+max(350)
 				left: -10px
 
 			&-logo
 				display: block
+
+				+max(520)
+					+size(40)
 
 			&-text
 				position: absolute
 				+valign
 				left: 72px
 
-				+max(480)
-					padding-top: 10px
-					width: 210px
+				+max(520)
+					// padding-top: 10px
+					// width: 210px
+					font-size: 12px
+					left: 53px
 
 				&-strong
 					display: inline
 					font-family: helvetica, arial, sans-serif
 					font-weight: 700
-					font-size: 16px
+					// font-size: 16px
+					// +max(520)
+
+					&:after
+						content: '©'
 
 
 
@@ -136,6 +146,8 @@
 			+clearfix
 
 			+max(920)
+				position: relative
+				top: -70px
 				width: 208px
 				+center(25px)
 
@@ -177,6 +189,9 @@
 							text-align: center
 							color: $subberwhite
 
+							.mobile &
+								top: 53%
+
 							.linkedin &
 								+icon('b')
 								font-family: lccons-social
@@ -197,16 +212,13 @@
 			+clearfix
 
 			+max(920)
-				width: 388px
+				position: relative
+				top: -57px
+				width: 100%
+				text-align: center
 				+center
 				margin-top: 10px
 				&-item:nth-child(3)
-					margin-left: 0
-
-			+max(480)
-				width: 100%
-				&-item
-					float: none
 					margin-left: 0
 
 
@@ -217,6 +229,12 @@
 				
 				+max(920)
 					text-align: center
+					float: none
+					margin-left: 0
+					display: inline-block
+
+					&:first-child
+						margin-right: 20px
 				
 
 				&-link

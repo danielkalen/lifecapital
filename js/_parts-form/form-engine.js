@@ -168,7 +168,9 @@ $.fn.formPrepare = function() {
 	});
 
 	$this.find('.fieldset.radio').each(function(){
-		$.fn.formPrepare.radioField($(this));
+		if ( !$(this).hasClass('disabled') ) {
+			$.fn.formPrepare.radioField($(this));
+		}
 	});
 
 	$this.find('.fieldset.range').each(function(){
@@ -224,6 +226,10 @@ $.fn.formValidate = function() {
 		if ( !$this.hasClass('valid') ) {
 			problem = true;
 			$this.addClass('error');
+
+			if ( $this[0] === $required.first()[0] ) {
+				scrollUpIfNeeded($this); // If window is scrolled more than the first field.
+			}
 
 		} else {
 			$this.removeClass('error');
@@ -482,7 +488,7 @@ function makeInvalid($field, error) {
 
 
 function scrollUpIfNeeded($openSection){
-	if ( window.pageYOffset > $openSection.offset().top ) {
+	if ( window.scrollY > $openSection.offset().top ) {
 		$("html, body").animate({ scrollTop: ($openSection.offset().top - 70) }, 300);
 	}
 }
@@ -492,8 +498,10 @@ function scrollUpIfNeeded($openSection){
 function saveSectionHeights($steps){
 
 	$steps.each(function(){
-			var $this = $(this);
-		var $thisHeight = $this.children('div').height() + 90;
+		var $this = $(this),
+			$thisHeight = $this.children('div').height() + 90;
+		
+		if (isMobile) $thisHeight = $thisHeight - 50;
 
 		$this.data('height', $thisHeight);
 	});

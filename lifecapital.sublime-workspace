@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"scroll",
+				"scrollUpIfNeeded"
+			],
+			[
+				"this",
+				"thisHeight"
+			],
+			[
+				"set",
+				"setTimeout	setTimeout"
+			],
+			[
 				"current",
 				"currentSection"
 			],
@@ -30,10 +42,6 @@
 			[
 				"easeIn",
 				"easeInOutCirc"
-			],
-			[
-				"set",
-				"setTimeout"
 			],
 			[
 				"radio",
@@ -276,26 +284,34 @@
 	"buffers":
 	[
 		{
-			"file": "jade/_parts-home/section-form.jade",
+			"file": "sass/plain.sass",
 			"settings":
 			{
-				"buffer_size": 12132,
+				"buffer_size": 789,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/_parts-form/form-engine.js",
+			"file": "sass/_parts/header.sass",
 			"settings":
 			{
-				"buffer_size": 16488,
+				"buffer_size": 1730,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/_parts-form/form.js",
+			"file": "blog/wp-content/themes/lifecapital_blog/sass/style.sass",
 			"settings":
 			{
-				"buffer_size": 23129,
+				"buffer_size": 303,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sass/_parts-home/home-header.sass",
+			"settings":
+			{
+				"buffer_size": 2609,
 				"line_ending": "Unix"
 			}
 		}
@@ -307,10 +323,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 174.0,
-		"last_filter": "jade",
+		"height": 222.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"build",
+				"Set Syntax: NAnt Build File"
+			],
 			[
 				"jade",
 				"Set Syntax: Jade"
@@ -373,31 +393,62 @@
 	"expanded_folders":
 	[
 		"/Applications/MAMP/lifecapital",
-		"/Applications/MAMP/lifecapital/js",
-		"/Applications/MAMP/lifecapital/js/_parts-form",
 		"/Applications/MAMP/lifecapital/sass",
-		"/Applications/MAMP/lifecapital/sass/_parts-blog",
-		"/Applications/MAMP/lifecapital/sass/_parts-form"
+		"/Applications/MAMP/lifecapital/sass/_parts",
+		"/Applications/MAMP/lifecapital/sass/_parts-home"
 	],
 	"file_history":
 	[
-		"/Applications/MAMP/lifecapital/.htaccess",
-		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-signature.sass",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/style.css",
+		"/Users/gazelle/Documents/Resources/_Web/WP build base/_global-theme/style.css",
+		"/Users/gazelle/Documents/Resources/_Web/WP build base/_global-theme/sass/style.sass",
+		"/Applications/MAMP/lifecapital/sass/style.sass",
+		"/Applications/MAMP/lifecapital/jade/_parts-plain/header-privacy.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-plain/content-privacy.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-plain/content-terms.jade",
+		"/Applications/MAMP/lifecapital/sass/_parts-plain/body-plain.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-intro.sass",
+		"/Applications/MAMP/lifecapital/jade/policy.jade",
+		"/Applications/MAMP/lifecapital/jade/terms.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-plain/header-terms.jade",
+		"/Applications/MAMP/lifecapital/sass/plain.sass",
+		"/Users/gazelle/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/lifecapital/sass/_parts-plain/header-plain.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts/header.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/home-header.sass",
+		"/Applications/MAMP/lifecapital/jade/_parts-global/header.jade",
+		"/Applications/MAMP/lifecapital/jade/_parts-global/header-nav.jade",
 		"/Applications/MAMP/lifecapital/js/_parts-form/form-engine-fields.js",
-		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-file.sass",
+		"/Applications/MAMP/lifecapital/jade/_parts-home/section-form.jade",
+		"/Applications/MAMP/lifecapital/js/_parts-form/form-engine.js",
+		"/Applications/MAMP/lifecapital/.htaccess",
+		"/Applications/MAMP/lifecapital/jade/_parts-home/section-intro.jade",
 		"/Applications/MAMP/lifecapital/sass/_parts-form/form-buttons.sass",
-		"/Applications/MAMP/lifecapital/sass/_parts-form/form.sass",
-		"/Applications/MAMP/lifecapital/sass/_parts-form/form-partner.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-radio.sass",
+		"/Applications/MAMP/lifecapital/jade/_parts-global/footer.jade",
 		"/Applications/MAMP/lifecapital/js/main.js",
+		"/Applications/MAMP/lifecapital/js/_parts-form/form.js",
+		"/Applications/MAMP/lifecapital/jade/_parts-home/header-home.jade",
 		"/Applications/MAMP/lifecapital/js/home.js",
 		"/Applications/MAMP/lifecapital/jade/home.jade",
-		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-textarea.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts/footer.sass",
+		"/Applications/MAMP/lifecapital/php/webform.php",
+		"/Applications/MAMP/lifecapital/php/callform.php",
+		"/Applications/MAMP/lifecapital/php/signature.class.php",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-cta.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-how.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/section-team.sass",
 		"/Applications/MAMP/lifecapital/sass/_parts-home/section-stories.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/sections.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-signature.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-file.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-form/form.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-form/form-partner.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-textarea.sass",
 		"/Applications/MAMP/lifecapital/sass/_parts-form/form-terms.sass",
 		"/Applications/MAMP/lifecapital/sass/_parts-home/section-stories-modal.sass",
 		"/Applications/MAMP/lifecapital/js/_parts-home/home-stories.js",
 		"/Applications/MAMP/lifecapital/jade/_parts-home/section-stories.jade",
-		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-radio.sass",
 		"/Applications/MAMP/lifecapital/sass/_parts/animations.sass",
 		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/sass/_parts/animations.sass",
 		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/sass/_parts/normalize.sass",
@@ -405,42 +456,27 @@
 		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-range.sass",
 		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-select.sass",
 		"/Applications/MAMP/lifecapital/sass/_parts-form/form-fieldset-input.sass",
-		"/Applications/MAMP/lifecapital/sass/style.sass",
 		"/Applications/MAMP/lifecapital/sass/_parts-form/form-results.sass",
 		"/Applications/MAMP/lifecapital/js/_plugins/jquery.nouislider.all.min.js",
 		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/js/_parts-form/form-engine.js",
 		"/Applications/MAMP/lifecapital/sass/_parts-form/form-range.sass",
 		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/js/_parts-form/form-engine-fields.js",
 		"/Applications/MAMP/lifecapital/sass/_parts/_vars.sass",
-		"/Applications/MAMP/lifecapital/sass/_parts-home/section-cta.sass",
 		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/jade/form-mixins.jade",
 		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/index.jade",
 		"/Applications/MAMP/lifecapital/js/_parts-global/_helpers.js",
 		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/js/_parts-global/_helpers.js",
 		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/js/global.js",
 		"/Users/gazelle/Downloads/Secrets Of The JavaScript Ninja V413HAV/Secrets Of The JavaScript Ninja V413HAV/code/01/1.js",
-		"/Applications/MAMP/lifecapital/jade/_parts-global/footer.jade",
-		"/Applications/MAMP/lifecapital/sass/_parts/footer.sass",
-		"/Applications/MAMP/lifecapital/sass/_parts-home/section-team.sass",
 		"/Users/gazelle/Documents/Resources/_Web/Development tools/Frameworks/_project_boilerplate/js/_parts-form/form-control.js",
 		"/Applications/MAMP/dovflex/js/_form/form-control.js",
 		"/Applications/MAMP/bwd/wp-content/themes/bwd_theme/js/global.js",
-		"/Applications/MAMP/lifecapital/sass/_parts-home/section-how.sass",
 		"/Applications/MAMP/lifecapital/jade/_parts-home/section-how.jade",
 		"/Applications/MAMP/getvoip/getvoip_wifi/js/main.js",
 		"/Applications/MAMP/lifecapital/jade/_parts-home/section-team.jade",
-		"/Applications/MAMP/lifecapital/sass/_parts-home/sections.sass",
-		"/Applications/MAMP/lifecapital/sass/_parts-home/section-intro.sass",
 		"/Applications/MAMP/lifecapital/php/application.php",
 		"/Applications/MAMP/lifecapital/sass/home.sass",
-		"/Applications/MAMP/lifecapital/jade/terms.jade",
-		"/Applications/MAMP/lifecapital/jade/policy.jade",
-		"/Applications/MAMP/lifecapital/jade/_parts-home/section-intro.jade",
-		"/Applications/MAMP/lifecapital/jade/_parts-home/header-home.jade",
-		"/Applications/MAMP/lifecapital/sass/_parts/header.sass",
-		"/Applications/MAMP/lifecapital/sass/_parts-home/home-header.sass",
 		"/Applications/MAMP/lifecapital/js/_parts-home/home-hero_height.js",
-		"/Applications/MAMP/lifecapital/js/_parts-form/form.js",
 		"/Applications/MAMP/lifecapital/index_uncombined.html",
 		"/Applications/MAMP/lifecapital/jade/_parts-policy/header-privacy.jade",
 		"/Applications/MAMP/lifecapital/jade/_parts-policy/policy-privacy.jade",
@@ -455,7 +491,6 @@
 		"/Applications/MAMP/lifecapital/jade/section-team.jade",
 		"/Applications/MAMP/lifecapital/jade/header-home.jade",
 		"/Applications/MAMP/lifecapital/jade/_parts-policy/policy-terms.jade",
-		"/Applications/MAMP/lifecapital/jade/_parts-global/header.jade",
 		"/Applications/MAMP/lifecapital/policy.html",
 		"/Applications/MAMP/lifecapital/index.html",
 		"/Applications/MAMP/lifecapital/index.jade",
@@ -491,24 +526,7 @@
 		"/Applications/MAMP/lifecapital/js/main.min.js",
 		"/Applications/MAMP/lifecapital/scss/_parts/footer.scss",
 		"/Applications/MAMP/lifecapital/scss/_parts/_vars.scss",
-		"/Applications/MAMP/lifecapital/php/call_application.php",
-		"/Applications/MAMP/lifecapital/php/test/fields1.txt",
-		"/Applications/MAMP/lifecapital/php/test/which.txt",
-		"/Applications/MAMP/lifecapital/php/test/pwd.txt",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/E0601358-C4E9-4510-8FE5-E21746EB3A4E/scripts.js",
-		"/Applications/MAMP/lifecapital/scss/icons.scss",
-		"/Users/gazelle/Downloads/lccons-social/styles.css",
-		"/Applications/MAMP/lifecapital/scss/fonts.scss",
-		"/Applications/MAMP/lifecapital/scss/_parts/animation.scss",
-		"/Applications/MAMP/lifecapital/php/signature.class.php",
-		"/Applications/MAMP/lifecapital/scss/_parts/header.scss",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/854DCDD5-3B30-4BA1-A4B6-AA86F689DED9/scripts.js",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/CA922D68-CE33-4708-8B96-1393754D5A5D/.bash_profile",
-		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/gv_sky.info",
-		"/Applications/MAMP/getvoip/gv_main/sites/all/modules/_GV/gv_blocks/gv_blocks.module",
-		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/templates/node--our_team.tpl.php",
-		"/Applications/MAMP/getvoip/gv_main/sites/all/themes/gv_sky/templates/page.tpl.php",
-		"/Applications/MAMP/getvoip/gv_main/sites/all/modules/_GV/gv_blocks/gv_blocks.info"
+		"/Applications/MAMP/lifecapital/php/call_application.php"
 	],
 	"find":
 	{
@@ -531,6 +549,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" ",
+			"YOU SHOULD",
+			"’",
+			"”",
+			"“",
+			"h2",
+			"arts-polic",
+			"max",
+			"saveSectionHeights",
+			"formPrepare",
+			"php/",
+			"php",
+			"terms",
+			"terms$",
+			"webform",
+			"html",
+			"Life Capital - Funding Solutions",
+			"http://getvoip.com/service-quotes",
+			"ew ScrollMagic.Scene",
+			"sAdvertising",
+			"new TweenMax.",
+			"480",
+			"•	",
+			"name",
+			"email_address",
+			"email",
+			"_",
+			"$name",
+			"$_POST['sign'",
+			"$_POST['sign",
+			"$_POST['",
+			"$_POST['img']",
+			"showSection",
+			"$this",
+			"firstname",
+			"Rewrite",
+			"Redirect",
+			"updateTermsName",
+			"!=",
 			"showSection",
 			"$this",
 			"•	",
@@ -619,46 +676,7 @@
 			"$this = this;",
 			"prepend",
 			"$window",
-			"step",
-			"\\",
-			"eld-style",
-			") label",
-			".start",
-			".cta-form-step.step",
-			".step.",
-			"find",
-			"ial-item-icon",
-			"+m(",
-			".social-icon",
-			".footer-section-contact-item-icon",
-			"ection-contact",
-			"oter-section-contact-",
-			".soc-ic",
-			".soc-icon-phone",
-			"team",
-			"checkbox",
-			"state",
-			"js/_form",
-			"appendStateList",
-			"wpcf7-form-section",
-			"formValid",
-			"$$('.wpcf7-form')",
-			"subject",
-			"saveSectionHeights",
-			"form",
-			"saveSectionHeights",
-			"calc",
-			"-item",
-			"opacity",
-			"ScrollScene",
-			"tweenChanges: true,",
-			"0.1",
-			"$stepApply",
-			"eq",
-			"sStep1",
-			"stepApply",
-			"tweenChanges: true, ",
-			"steps"
+			"step"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -677,287 +695,140 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "jade/_parts-home/section-form.jade",
+					"file": "sass/plain.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12132,
+						"buffer_size": 789,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10850,
-								10850
+								192,
+								192
 							]
 						],
 						"settings":
 						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
-							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"expand_region_settings": "{\"hash\": \"3d9c89b26f6c9a5d5eedd23b0aae4f0c\", \"stack\": [{\"end\": 8895, \"start\": 8894}, {\"end\": 8899, \"start\": 8894}]}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3364.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/_parts-form/form-engine.js",
+					"file": "sass/_parts/header.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16488,
+						"buffer_size": 1730,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9638,
-								9638
+								797,
+								797
 							]
 						],
 						"settings":
 						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
-							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"expand_region_settings": "{\"hash\": \"4b854a07601633d4b1f1d53403f918b3\", \"stack\": [{\"end\": 9543, \"start\": 9538}]}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1086.0,
+						"translation.y": 422.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "blog/wp-content/themes/lifecapital_blog/sass/style.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								4
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"expand_region_settings": "{\"hash\": \"a528dc14d6ded16168547299715066be\", \"stack\": [{\"end\": 278, \"start\": 271}]}",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "js/_parts-form/form.js",
+					"buffer": 3,
+					"file": "sass/_parts-home/home-header.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23129,
+						"buffer_size": 2609,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17381,
-								16946
+								405,
+								405
 							]
 						],
 						"settings":
 						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
-							],
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"expand_region_settings": "{\"hash\": \"761d709cdfb610b399466644cee353c4\", \"stack\": [{\"end\": 16743, \"start\": 16734}]}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 8512.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1026,7 +897,7 @@
 		[
 			[
 				"",
-				"/Applications/MAMP/getvoip/getvoip_wifi/gv_wifi.sublime-project"
+				"/Applications/MAMP/pureaesthetics/wp-content/pureaesthetics.sublime-project"
 			]
 		],
 		"width": 380.0

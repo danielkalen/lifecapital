@@ -1,79 +1,181 @@
+header
+	height: 100%
+
+	+max(580, height)
+		height: 600px
+	+max(760)
+		height: 890px
+	+max(580)
+		height: 920px
+
 .hero
-  &-text
-    position: absolute
-    +valign(48%)
-    left: 0
-    right: 0
-    text-align: center
-    color: $white
-    font-family: proxima
-    
-    +max(1440)
-      top: 52%
-    +max(768, height)
-      top: 58%
-    +max(700, height)
-      top: 64%
-    +max(760)
-      top: 370px
+	height: 91%
+	background-image: url(../img/img-header.jpg)
+	
+	+max(768, height)
+		height: 86.5% !important
+	+max(768)
+		height: 95% !important
+		background-position: 17% 0%
 
-    &-title
-      width: 90%
-      +center
-      font-size: 59px
-      font-weight: 400
-      
-      +max(760)
-        font-size: 7.7vw
-      +max(580)
-        width: 67%
-        min-width: 300px
-        font-size: 42px
-        line-height: 46px
 
-    &-subtitle
-      position: relative
-      width: 90%
-      max-width: 545px
-      +center
-      padding-top: 23px
-      font-size: 19px
-      line-height: 25px
-      font-weight: 400
-      font-style: italic
+	&-text
+		position: absolute
+		+valign(48%)
+		left: 0
+		right: 0
+		padding-bottom: 0
+		
+		+max(1440)
+			top: 52%
+		+max(768, height)
+			top: 58%
+		+max(700, height)
+			top: 64%
+		+max(760)
+			top: 370px
 
-      +max(580)
-        width: 80%
-        font-size: 17px
+		&-title
+			+center
+			font-size: 59px
+			font-weight: 400
+			
+			+max(760)
+				font-size: 7.7vw
+			+max(580)
+				width: 67%
+				min-width: 300px
+				font-size: 42px
+				line-height: 46px
 
-  &-action
-    position: absolute
-    bottom: 75px
-    left: 0
-    right: 0
-    +center
-    text-align: center
-    color: $white
+		&-subtitle
+			max-width: 545px
+			+center(23px)
 
-    +max(768)
-      bottom: 8%
-    
-    +max(768)
-      +max(700, height)
-        display: none
-    
-    &-icon
-      position: relative
-      +center(0, 7px)
+			&.small
+				margin-top: 8px
+				font-size: 24px
+				line-height: 1.2
+				font-style: normal
+				font-weight: 300
 
-      &:before
-        +icon('g')
-        font-size: 53px
-    
-    &-text
-      text-align: center
-      font-family: proxima
-      font-size: 14px
-      font-weight: 300
-      letter-spacing: 1.1px
-      text-transform: uppercase
+				+max(520)
+					font-size: 19px
+					margin-top: 14px
+
+	&-action
+		position: absolute
+		bottom: 75px
+		left: 0
+		right: 0
+		+center
+		text-align: center
+		color: $white
+
+		+max(768)
+			bottom: 8%
+		
+		+max(768)
+			+max(700, height)
+				display: none
+		
+		&-icon
+			position: relative
+			+center(0, 7px)
+
+			&:before
+				+icon('g')
+				font-size: 53px
+		
+		&-text
+			text-align: center
+			font-family: proxima
+			font-size: 14px
+			font-weight: 300
+			letter-spacing: 1.1px
+			text-transform: uppercase
+
+
+
+/* ==========================================================================
+ * BENEFITS
+ * ==========================================================================*/
+
+.benefits
+	height: 120px
+	width: 100%
+	background-color: $white
+	border-bottom: 2px solid $divider
+	box-sizing: border-box
+
+	+max(768, height)
+		height: 13.6%
+
+	+max(768)
+		position: absolute
+		// bottom: 5%
+		bottom: 12.5%
+		height: auto
+		border: 0
+		background-color: transparent
+
+	&-wrap
+		width: 100%
+		height: 100%
+		+center
+
+	&-item
+		width: 33.333%
+		height: 100%
+		float: left
+		border-left: 2px solid $divider
+		text-align: center
+		color: $grey-mid
+		box-sizing: border-box
+
+		+max(768)
+			float: none
+			width: 90%
+			padding: 20px 0 25px
+			+center
+			border: 0
+			color: $white
+			
+
+		&-wrap
+			position: relative
+			+valign
+			width: 92%
+			+center
+
+			+max(768)
+				+unvalign
+
+		&-icon
+			+size(31)
+			+center
+			padding-bottom: 13px
+			font-size: 31px
+
+			+max(768)
+				padding-bottom: 15px
+
+			+max(768)
+				padding-bottom: 9px
+
+			&.icon-loanrange:before
+				font-size: 35px
+				left: -2px
+				top: -3px
+
+		&-text
+			font-size: 17px
+			font-weight: 600
+			text-transform: uppercase
+			+max(768)
+				font-size: 16px
+
+
+	&-item:nth-child(1)
+		border-left: 0
+

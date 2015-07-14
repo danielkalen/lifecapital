@@ -79,6 +79,12 @@
 			color: $grey-mid
 			cursor: default
 
+			+max(520)
+				position: relative
+				display: block
+				padding-top: 18px
+				font-size: 12px
+
 			&:before
 				+icon('j')
 				position: relative
@@ -88,8 +94,15 @@
 				padding-right: 5px
 				line-height: 0
 
-				.checked &
-					content: 'k'
+				+max(520)
+					font-size: 18px
+
+		.disabled .checked &:before
+			content: 'k'
+
+			+max(520)
+				display: block
+				top: -10px
 
 
 		.checked &
@@ -97,10 +110,17 @@
 			color: $contrast
 
 		.radio_special &
+			margin-top: 1px
 			font-size: 18px
 			line-height: 1.15
+
+			+max(736)
+				font-size: 15px
 
 
 		&-sub
 			font-size: 12px
 			text-transform: uppercase
+
+			+max(736)
+				font-size: 10px
