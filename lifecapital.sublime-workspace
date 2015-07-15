@@ -284,34 +284,18 @@
 	"buffers":
 	[
 		{
-			"file": "sass/plain.sass",
+			"file": "blog/wp-content/themes/lifecapital_blog/index.php",
 			"settings":
 			{
-				"buffer_size": 789,
+				"buffer_size": 1164,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "sass/_parts/header.sass",
+			"file": "jade/home.jade",
 			"settings":
 			{
-				"buffer_size": 1730,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/wp-content/themes/lifecapital_blog/sass/style.sass",
-			"settings":
-			{
-				"buffer_size": 303,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sass/_parts-home/home-header.sass",
-			"settings":
-			{
-				"buffer_size": 2609,
+				"buffer_size": 1786,
 				"line_ending": "Unix"
 			}
 		}
@@ -393,12 +377,45 @@
 	"expanded_folders":
 	[
 		"/Applications/MAMP/lifecapital",
+		"/Applications/MAMP/lifecapital/jade",
 		"/Applications/MAMP/lifecapital/sass",
-		"/Applications/MAMP/lifecapital/sass/_parts",
-		"/Applications/MAMP/lifecapital/sass/_parts-home"
+		"/Applications/MAMP/lifecapital/sass/_parts-blog"
 	],
 	"file_history":
 	[
+		"/Applications/MAMP/lifecapital/sass/_parts-blog/blog-listing.sass",
+		"/Applications/MAMP/lifecapital/sass/blog.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-blog/blog-comments.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-blog/blog-article.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts-blog/blog-sidebar.sass",
+		"/Applications/MAMP/lifecapital/policy.html",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/archive.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/page.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/functions.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/single.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/sass/style.scss",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/header.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/footer.php",
+		"/Applications/MAMP/lifecapital/index.html",
+		"/Applications/MAMP/lifecapital/sass/plain.sass",
+		"/Applications/MAMP/lifecapital/sass/_parts/header.sass",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/404.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/comments.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/content-none.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/content-page.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/content-search.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/content-single.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/content.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/inc/custom-header.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/inc/customizer.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/inc/extras.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/inc/jetpack.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/inc/template-tags.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/index.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/rtl.css",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/search.php",
+		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/sidebar.php",
+		"/Applications/MAMP/lifecapital/sass/_parts-home/home-header.sass",
 		"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog/style.css",
 		"/Users/gazelle/Documents/Resources/_Web/WP build base/_global-theme/style.css",
 		"/Users/gazelle/Documents/Resources/_Web/WP build base/_global-theme/sass/style.sass",
@@ -411,11 +428,8 @@
 		"/Applications/MAMP/lifecapital/jade/policy.jade",
 		"/Applications/MAMP/lifecapital/jade/terms.jade",
 		"/Applications/MAMP/lifecapital/jade/_parts-plain/header-terms.jade",
-		"/Applications/MAMP/lifecapital/sass/plain.sass",
 		"/Users/gazelle/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Applications/MAMP/lifecapital/sass/_parts-plain/header-plain.sass",
-		"/Applications/MAMP/lifecapital/sass/_parts/header.sass",
-		"/Applications/MAMP/lifecapital/sass/_parts-home/home-header.sass",
 		"/Applications/MAMP/lifecapital/jade/_parts-global/header.jade",
 		"/Applications/MAMP/lifecapital/jade/_parts-global/header-nav.jade",
 		"/Applications/MAMP/lifecapital/js/_parts-form/form-engine-fields.js",
@@ -491,42 +505,12 @@
 		"/Applications/MAMP/lifecapital/jade/section-team.jade",
 		"/Applications/MAMP/lifecapital/jade/header-home.jade",
 		"/Applications/MAMP/lifecapital/jade/_parts-policy/policy-terms.jade",
-		"/Applications/MAMP/lifecapital/policy.html",
-		"/Applications/MAMP/lifecapital/index.html",
 		"/Applications/MAMP/lifecapital/index.jade",
 		"/Applications/MAMP/lifecapital/jade/_parts-global",
 		"/Applications/MAMP/lifecapital/jade/footer.jade",
 		"/Applications/MAMP/lifecapital/jade/section-how.jade",
 		"/Applications/MAMP/lifecapital/index_unminified.html",
-		"/Applications/MAMP/lifecapital/jade/section-form.jade",
-		"/Applications/MAMP/lifecapital/jade/section-stories.jade",
-		"/Applications/MAMP/lifecapital/jade/section-intro.jade",
-		"/Applications/MAMP/dovflex/index.jade",
-		"/Applications/MAMP/bwd/wp-content/themes/bwd_theme/sass/_parts/_vars.sass",
-		"/Applications/MAMP/lifecapital/scss/_parts/range.scss",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/7DCD5D4D-8E24-4B26-9E76-EC72C6135C6C/wp-trackback.php",
-		"/Applications/MAMP/lifecapital/php/test/secret.php",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/8BB55E37-4DB4-4F92-AC39-B40E4AC20AA0/count.php",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/7C804526-653D-4FF6-860D-8DFB65188676/application.php",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/4E49A0DA-B5BC-43B5-9765-9AB3DE227753/pdftk.php",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/E8AE5ECD-C0A7-43D3-8888-F467B012B754/.htaccess",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/65974B84-1F3D-42FB-A2E9-D48C8FF0E754/.htaccess",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/1F326645-A30F-474B-B564-4DF9CA21E16E/.htaccess",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/CF42C232-51FA-4998-B22D-DC7D6E604536/.htaccess",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/48CE08D2-5C72-4EA1-9BF8-108C44A033F8/.htaccess",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/09ADC1BD-81AE-4CC5-9DE1-37A7C46EE95D/.htaccess",
-		"/Applications/MAMP/lifecapital/css/style.css",
-		"/Applications/MAMP/lifecapital/scss/main.scss",
-		"/Applications/MAMP/lifecapital/scss/policy-page.scss",
-		"/Applications/MAMP/lifecapital/terms.html",
-		"/Users/gazelle/Library/Caches/Cleanup At Startup/Transmit/91EFE66E-3700-4730-8B4D-A3816879B6F9/.htaccess",
-		"/Applications/MAMP/lifecapital/index_combined.html",
-		"/Applications/MAMP/lifecapital/js/_combined.js",
-		"/Applications/MAMP/lifecapital/js/_combined.min.js",
-		"/Applications/MAMP/lifecapital/js/main.min.js",
-		"/Applications/MAMP/lifecapital/scss/_parts/footer.scss",
-		"/Applications/MAMP/lifecapital/scss/_parts/_vars.scss",
-		"/Applications/MAMP/lifecapital/php/call_application.php"
+		"/Applications/MAMP/lifecapital/jade/section-form.jade"
 	],
 	"find":
 	{
@@ -537,6 +521,7 @@
 		"height": 100.0,
 		"where_history":
 		[
+			"/Applications/MAMP/lifecapital/blog/wp-content/themes/lifecapital_blog",
 			"<open folders>",
 			"/Applications/MAMP/shopperbarn/wp-content/plugins/woocommerce",
 			"<open folders>",
@@ -546,9 +531,16 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"search-form",
+			"home",
+			"sass",
+			"Snapmagnet",
+			"snapmagnet",
+			"snapmagget",
+			"snapmanget",
 			" ",
 			"YOU SHOULD",
 			"’",
@@ -669,14 +661,7 @@
 			"start",
 			"min",
 			"29",
-			"start",
-			"checkbox",
-			"$(this)",
-			"checkboxField",
-			"$this = this;",
-			"prepend",
-			"$window",
-			"step"
+			"start"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -684,6 +669,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Lifecapital",
+			"lifecapital",
 			"$primary-color"
 		],
 		"reverse": false,
@@ -695,140 +682,75 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "sass/plain.sass",
+					"file": "blog/wp-content/themes/lifecapital_blog/index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 789,
+						"buffer_size": 1164,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								192,
-								192
+								419,
+								419
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"expand_region_settings": "{\"hash\": \"c750345ef232f597fb19b0c6be7c6547\", \"stack\": [{\"end\": 471, \"start\": 464}, {\"end\": 476, \"start\": 464}]}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "sass/_parts/header.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1730,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								797,
-								797
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 422.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "blog/wp-content/themes/lifecapital_blog/sass/style.sass",
+					"buffer": 1,
+					"file": "jade/home.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 303,
+						"buffer_size": 1786,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								283,
-								4
+								1239,
+								1239
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"expand_region_settings": "{\"hash\": \"a528dc14d6ded16168547299715066be\", \"stack\": [{\"end\": 278, \"start\": 271}]}",
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "sass/_parts-home/home-header.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2609,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								405,
-								405
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -897,7 +819,7 @@
 		[
 			[
 				"",
-				"/Applications/MAMP/pureaesthetics/wp-content/pureaesthetics.sublime-project"
+				"/Applications/MAMP/getvoip/getvoip_wifi/gv_wifi.sublime-project"
 			]
 		],
 		"width": 380.0

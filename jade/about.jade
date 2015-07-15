@@ -1,0 +1,34 @@
+doctype html
+html(class='no-js', lang='en-US', itemscope='', itemtype='http://schema.org/WebPage', dir='ltr', prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#')
+    head
+        //- meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=0')
+        //- Begin Meta Data
+        //- link(rel="canonical", href="http://mylifecapital.com")
+        //- meta(property="og:url", content="http://mylifecapital.com")
+        link(rel="shortcut icon", href="img/favicon.ico", type="image/x-icon")
+        meta(property="og:title", content="Life Capital - About Us")
+        meta(property="fb:admins", content="http://www.facebook.com/mylifecapital")
+        meta(itemprop="name", content="Life Capital - About Us")
+        //- End Meta data.
+        title Life Capital - About Us
+        link(rel='stylesheet', href='css/style.css', type='text/css')
+        link(rel='stylesheet', href='css/plain.css', type='text/css')
+
+        include ./_parts-global/takana.jade
+    body
+        #page
+            .modal-overlay
+            include ./_parts-plain/header-about.jade
+
+
+
+            main.main(role='main')
+
+                include ./_parts-plain/content-about.jade
+
+            include ./_parts-global/footer.jade
+
+
+
+        script(type='text/javascript', src='js/main.min.js')

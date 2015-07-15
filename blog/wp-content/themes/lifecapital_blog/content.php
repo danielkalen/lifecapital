@@ -4,18 +4,18 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+<article id="post-<?php the_ID(); ?>" class="blog_list-article">
+	<header class="blog_list-article-header">
+		<?php the_title( sprintf( '<h1 class="blog_list-article-header-title"><a class="blog_list-article-header-title-link" href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="blog_list-article-header-meta">
 			<?php lifecapital_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
-	<div class="entry-content">
+	<div class="blog_list-article-content">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
@@ -27,7 +27,7 @@
 
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="blog_list-article-footer">
 		<?php lifecapital_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

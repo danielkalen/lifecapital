@@ -33,4 +33,5 @@ ExpiresDefault "access 9 days"
 	RewriteRule ^callform$ php/callform.php
 	RewriteRule ^terms$ terms.html
 	RewriteRule ^policy$ policy.html
+	RewriteRule ^about$ about.html
 </IfModule>

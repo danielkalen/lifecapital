@@ -67,9 +67,9 @@ if ( ! function_exists( 'lifecapital_posted_on' ) ) :
  */
 function lifecapital_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-	}
+	// if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+	// 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+	// }
 
 	$time_string = sprintf( $time_string,
 		esc_attr( get_the_date( 'c' ) ),
@@ -79,16 +79,16 @@ function lifecapital_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'lifecapital' ),
+		_x( '%s', 'post date', 'lifecapital' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		_x( 'by %s', 'post author', 'lifecapital' ),
+		_x( '%s', 'post author', 'lifecapital' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
-
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>';
+	echo '<span class="blog_list-article-header-meta-date">' . $posted_on . '</span>';
+	echo '<span class="blog_list-article-header-meta-author"> ' . $byline . '</span>';
 
 }
 endif;
@@ -103,7 +103,7 @@ function lifecapital_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( ', ', 'lifecapital' ) );
 		if ( $categories_list && lifecapital_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'lifecapital' ) . '</span>', $categories_list );
+			printf( '<span class="blog_list-article-footer-category">' . __( 'Posted in %1$s', 'lifecapital' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
@@ -114,12 +114,12 @@ function lifecapital_entry_footer() {
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'lifecapital' ), __( '1 Comment', 'lifecapital' ), __( '% Comments', 'lifecapital' ) );
-		echo '</span>';
+		// echo '<span class="blog_list-article-footer-comments">';
+		// comments_popup_link( __( 'Leave a comment', 'lifecapital' ), __( '1 Comment', 'lifecapital' ), __( '% Comments', 'lifecapital' ) );
+		// echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'lifecapital' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'lifecapital' ), '<span class="blog_list-article-footer-edit">', '</span>' );
 }
 endif;
 

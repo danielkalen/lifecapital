@@ -1,0 +1,59 @@
+.widget
+	// margin-bottom: 27px
+	margin-bottom: 15px
+	padding-bottom: 15px
+	border-bottom: 1px solid $divider
+
+	&:last-child
+		border-bottom: 0
+
+	&-title
+		font-size: 22px
+		color: $primary
+		font-weight: 500
+
+	ul
+		font-size: 14px
+		list-style: disc
+		padding-left: 19px
+
+		li
+			margin-bottom: 10px
+
+			&:first-child
+				margin-top: 4px
+			// &:last-child
+			// 	margin-bottom: 5px
+		a
+			color: #393939
+
+			&:hover
+				text-decoration: underline
+
+
+.search-form
+	.screen-reader-text
+		display: none
+
+	.search-field
+		width: 70%
+		height: 36px
+		padding: 0 10px
+		border: 1px solid $divider
+		border-radius: 2px
+		font-size: 15px
+		box-sizing: border-box
+
+	.search-submit
+		position: relative
+		top: 1px
+		float: right
+		height: 34px
+		width: 25%
+		// background-color: $contrast
+		background-color: $primary
+		border-radius: 2px
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700
+		color: white
