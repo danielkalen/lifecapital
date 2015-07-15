@@ -1,0 +1,313 @@
+mixin fieldsetInput(name, label, placeholder, classes, required, inputClasses)
+  - if (required) classes = classes + ' required'
+  .cta-form-fieldset.fieldset.input_text(class=classes)
+    label.cta-form-fieldset-label(for=name)=label
+    input.cta-form-fieldset-input.input(id=name, name=name, type="text", placeholder=placeholder, class=inputClasses)
+
+
+
+mixin fieldsetSelect(name, label, placeholder, classes, required, items)
+  - if (required) classes = classes + ' required'
+  .cta-form-fieldset.fieldset.select(class=classes)
+    label.cta-form-fieldset-label(for=name)=label
+    select.cta-form-fieldset-select.input(id=name, name=name)
+      option(value='')=placeholder
+      -if (items)
+        each item, index in items
+          option(value=index)=item
+
+
+mixin fieldsetTextarea(name, label, placeholder, classes, required, inputClasses)
+  - if (required) classes = classes + ' required'
+  .cta-form-fieldset.fieldset.textarea(class=classes)
+    label.cta-form-fieldset-label(for=name)=label
+    textarea.cta-form-fieldset-textarea.input(id=name, name=name, placeholder=placeholder)
+
+
+mixin fieldsetCheckboxSingle(name, label, classes, required)
+  - if (required) classes = classes + ' required'
+  .cta-form-fieldset.fieldset.checkbox(class=classes)
+    .cta-form-fieldset.fieldset-checkbox.input-button
+      div.cta-form-fieldset-checkbox-box
+      label.cta-form-fieldset-checkbox-label(for=name)=label
+      input.input.checkbox(id=name, name=name type='checkbox')
+
+
+mixin fieldsetCheckbox(name, label, classes, required, items)
+  - if (required) classes = classes + ' required'
+  - classes = classes + ' options_' + items.length
+
+  .cta-form-fieldset.fieldset.checkbox(class=classes)
+    .cta-form-fieldset-label=label
+    each item, index in items
+      - id = name + '_' + index
+      .cta-form-fieldset-checkbox.input-button
+        div.cta-form-fieldset-checkbox-box
+        label.cta-form-fieldset-checkbox-label(for=id)=item
+        input.input.checkbox(id=id, name=name, type='checkbox', val=item)
+
+
+mixin fieldsetRadio(name, label, classes, required, items)
+  - if (required) classes = classes + ' required'
+  - classes = classes + ' options_' + items.length
+
+  .cta-form-fieldset.fieldset.radio(class=classes)
+    .cta-form-fieldset-label=label
+    each item, index in items
+      - id = name + '_' + index
+      .cta-form-fieldset-radio.input-button
+        div.cta-form-fieldset-radio-box
+        label.cta-form-fieldset-radio-label(for=id)=item
+        input.input.radio(id=id, name=name, type='radio', val=item)
+
+
+mixin fieldsetRadioSpecial(name, label, classes, required, items)
+  - if (required) classes = classes + ' required'
+  - classes = classes + ' options_3'
+
+  .cta-form-fieldset.fieldset.radio.radio_special(class=classes)
+    .cta-form-fieldset-label=label
+    each item, index in items
+      - id = name + '_' + index
+      .cta-form-fieldset-radio.input-button
+        div.cta-form-fieldset-radio-box
+        label.cta-form-fieldset-radio-label(for=id)=item
+          .cta-form-fieldset-radio-label-sub=index
+        input.input.radio(id=id, name=name, type='radio', val=item)
+
+
+mixin fieldsetRange(name, label, classes, required)
+  //- - if (required) classes = classes + ' required'
+  .cta-form-fieldset.fieldset.range.required(class=classes)
+    .cta-form-fieldset-label=label
+    .cta-form-fieldset-range(class=classes)
+      .cta-form-fieldset-range-start
+      .cta-form-fieldset-range-end
+    input.cta-form-fieldset-input.input(id=name, name=name, type="hidden")
+
+
+
+mixin fieldsetFile(name, label, classes, required, inputClasses)
+  - if (required) classes = classes + ' required'
+  .cta-form-fieldset.fieldset.file(class=classes)
+    label.cta-form-fieldset-label(for=name)=label
+    .cta-form-fieldset-file_wrap
+      input.cta-form-fieldset-file.input(id=name, name=name, type="file", class=inputClasses, accept='.pdf, .doc, .png, .tiff, .jpg, .rtf, .rtfd, .pages, .xls, .csv', multiple='')
+
+
+
+
+
+
+
+
+
+
+
+section.section.cta.calculator
+  form#cta.cta-form(action='')
+    .cta-form-wrap
+      
+
+      .cta-form-step.step.calc
+        .cta-form-step-wrap
+          +fieldsetInput('business_type', 'Type Of Business', 'Restaurant, Clothing Store, etc.', '', true)
+          +fieldsetRadio('months_in_business', 'Months In Business', '', true,[
+              '0',
+              '1 - 6',
+              '6 - 18',
+              '18 - 36',
+              '36 +'
+            ])
+          +fieldsetRadioSpecial('credit_score', 'Approximate Credit Score', 'credit_score', true,{
+              'Poor': '0-499',
+              'Average': '500-640',
+              'Excellent': '650+'
+            })
+          +fieldsetRange('monthly_processing_volume', 'Monthly Credit Processing Volume', 'volume', true)
+          +fieldsetRange('monthly_gross_sales', 'Monthly Gross Sales', 'sales', true)
+          .clearfix
+
+
+
+
+
+      .cta-form-step.step.results
+        .cta-form-step-wrap
+          .results-wrap
+            .results-approved You've been pre-approved for
+              .results-approved-amount $
+                span.results-approved-amount-number
+
+            .results-terms Term Length Options:
+            +fieldsetRadio('term_length_options', 'Terms', 'disabled', false,[
+                '3-6 months',
+                '6-9 months',
+                '9-12 months'
+              ])        
+            .clearfix
+
+
+
+
+      .cta-form-step.step.call
+        .cta-form-step-wrap
+          +fieldsetInput('call_firstname', 'First Name', 'John', 'half first', true)
+          +fieldsetInput('call_lastname', 'Last Name', 'Doe', 'half', true)
+          .clearfix
+
+          +fieldsetInput('call_phone', 'Phone Number', '(xxx) xxx-xxxx', 'half first', true, 'phone')
+          +fieldsetInput('call_email', 'Email Address', 'johndoe@email.com', 'half', true, 'email')
+          .clearfix
+
+          +fieldsetInput('call_date', 'Date (optional)', 'mm/dd/yyyy', 'half date first', false)
+          +fieldsetInput('call_time', 'Time (optional)', 'HH:MM', 'half time', false)
+          .clearfix
+
+      
+
+
+
+
+      .cta-form-step.step.apply
+        .cta-form-step-wrap
+          
+          .cta-form-step-title Business Information
+         
+          +fieldsetInput('company_legal_name', 'Company Legal Name', 'Acme, Inc.', 'half first', true)
+          +fieldsetInput('company_dba_name', 'Company DBA Name', 'Acme', 'half', false)
+          .clearfix
+
+          +fieldsetInput('business_address', 'Business Address', 'Business Address', '', true)
+          +fieldsetInput('business_city', 'City', 'City', 'half first', true)
+          +fieldsetSelect('business_state', 'State', 'Select State', 'half state', true)
+          .clearfix
+
+          +fieldsetInput('business_zip', 'Zip Code', 'xxxxx', 'half zip first', true)
+          +fieldsetInput('business_phone', 'Business Phone #', '(xxx) xxx-xxxx', 'half', true, 'phone')
+          .clearfix
+
+          +fieldsetInput('tax_id', 'Tax Id', 'xx-xxxxxxx', 'half first', true)
+          +fieldsetInput('date_started', 'Date Business Started', 'mm/dd/yyyy', 'date half', true)
+          .clearfix
+
+          +fieldsetInput('website', 'Website (optional)', 'Website Address', 'half first', false)
+          +fieldsetSelect('entity_type', 'Entity Type', 'Select Entity', 'half', true, {
+            'llc': 'LLC',
+            'corp': 'Corporation',
+            'scrop': 'S-Corp',
+            'partnership': 'Partnership',
+            'sole': 'Sole Proprietorship'
+            })
+          .clearfix
+
+          +fieldsetInput('business_email', 'Business Email', 'business@email.com', '', true, 'email')
+          +fieldsetTextarea('services_sold', 'Product/Services Sold', '', '', true)
+          .clearfix
+
+
+
+
+
+
+
+      .cta-form-step.step.final
+        .cta-form-step-wrap
+
+          .cta-form-step-title Owner Information
+
+          +fieldsetInput('firstname', 'First Name', 'John', 'half first', true)
+          +fieldsetInput('lastname', 'Last Name', 'Doe', 'half', true)
+          .clearfix
+
+          +fieldsetInput('home_address', 'Home Address', 'Home Address', '', true)
+          +fieldsetInput('home_city', 'City', 'City', 'fourth first', true)
+          +fieldsetSelect('home_state', 'State', 'Select State', 'half state', true)
+          +fieldsetInput('home_zip', 'Zip Code', 'Zip Code', 'zip fourth', true)
+          .clearfix
+
+          +fieldsetInput('ownership', 'Ownership', '%', 'third first', true)
+          +fieldsetInput('ssn', 'SSN', 'xxx-xx-xxxx', 'third', true)
+          +fieldsetInput('dob', 'Date Of Birth', 'mm/dd/yyyy', 'date third', true)
+          .clearfix
+
+          +fieldsetFile('file', 'Attach Documents (optional)', '', false)
+          +fieldsetRadio('additional_partners', 'Do you have any business partners?', 'additional_partners', true,[
+              'Yes',
+              'No'
+            ])
+
+          .partner
+            .cta-form-step-title Partner Information
+            +fieldsetInput('partner_firstname', 'First Name', 'John', 'half first', false)
+            +fieldsetInput('partner_lastname', 'Last Name', 'Doe', 'half', false)
+            .clearfix
+
+            +fieldsetInput('partner_home_address', 'Home Address', 'Home Address', '', false)
+            +fieldsetInput('partner_home_city', 'City', 'City', 'fourth first', false)
+            +fieldsetSelect('partner_home_state', 'State', 'Select State', 'half state', false)
+            +fieldsetInput('partner_home_zip', 'Zip Code', 'Zip Code', 'zip fourth', false)
+            .clearfix
+
+            +fieldsetInput('partner_ownership', 'Ownership', '%', 'third first', false)
+            +fieldsetInput('partner_ssn', 'SSN', 'xxx-xx-xxxx', 'third', false)
+            +fieldsetInput('partner_dob', 'Date Of Birth', 'mm/dd/yyyy', 'date third', false)
+            .clearfix
+
+
+          .cta-form-terms By Signing below, I, 
+              span.cta-form-terms-name
+              | agree to the 
+              span.cta-form-terms-link Terms &amp; Conditions.
+
+            .cta-form-terms-modal.modal
+              .cta-form-terms-modal-content
+                .cta-form-terms-modal-content-close.modal-close
+                .cta-form-terms-modal-content-img
+                  p.cta-form-terms-modal-content-title
+                    span.cta-form-terms-modal-content-title-highlight Life Capital <br />
+                      | Terms &amp; Conditions
+                p.cta-form-terms-modal-content-text Applicant authorizes its assigns, agents, banks or financial institutions to obtain an investigative or consumer report from a credit bureau or a credit agency and to investigate the references given on any other statement or data obtained from applicant.
+          
+          .cta-form-fieldset.fieldset.signature.required
+            .cta-form-fieldset-label Signature (
+              span.cta-form-fieldset-label-highlight.signature-clear clear
+              | )
+            .cta-form-fieldset-signature#signature-pad
+            input#signature-data(type='hidden', name='signature-data')
+            input#signature-img(type='hidden', name='signature-img')
+            input#skipped(type='hidden', name='skipped')
+            input#signature-date(type='hidden', name='signature-date')
+            .signature-placeholder
+      
+
+      .cta-form-step.step.success
+        .cta-form-step-wrap
+          .icon-success
+            span.line.tip
+            span.line.long
+            .placeholder
+            .fix
+          h2 Success!
+          p.success-message
+            | Your application has been successfuly submitted! You will be contacted by an agent shortly.
+      
+
+
+
+    .cta-form-buttons
+      .cta-form-buttons-item.button.next.calculate.webform
+        .cta-form-buttons-item-text Calculate My Results
+      .cta-form-buttons-item.button.next.call.callform
+        .cta-form-buttons-item-text Schedule a Phone Call
+
+
+
+  .cta-skip Alternatively you can
+    span.cta-skip-link#skip-to-app  start applying
+    |  or 
+    span.cta-skip-link#skip-to-call schedule a consultation phone call.
+
+
+
+

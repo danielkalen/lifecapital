@@ -1,0 +1,25 @@
+@import _parts/_vars
+
+.cta
+	min-height: 1070px
+	+max(680)
+	min-height: 900px
+
+	&-skip
+		width: 90%
+		max-width: 520px
+		+center(40px)
+		font-size: 14px
+		text-align: center
+		color: $grey-mid
+
+		&-link
+			color: $primary
+			cursor: pointer
+	
+			&:hover
+				text-decoration: underline
+
+
+
+	@import _parts-form/form

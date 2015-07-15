@@ -34,4 +34,6 @@ ExpiresDefault "access 9 days"
 	RewriteRule ^terms$ terms.html
 	RewriteRule ^policy$ policy.html
 	RewriteRule ^about$ about.html
+	RewriteRule ^calculator$ calculator.html
+	RewriteRule ^application$ application.html
 </IfModule>
