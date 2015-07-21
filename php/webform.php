@@ -52,12 +52,21 @@ $email_values = '';
 $pdf_values = '';
 
 foreach ($_POST as $key => $value) {
-	if ($value !== '') {
-		$email_values .= $key . ": " . $value . "\n" . "<br />";
-		$pdf_values .= '<</T('. $key .')/V('. $value .')>>';
+	if ($key !== 'signature-data') {
+		if ($value !== '') {
+			$email_values .= $key . ": " . $value . "\n" . "<br />";
+			$pdf_values .= '<</T('. $key .')/V('. $value .')>>';
+		}
 	}
 }
 
+// ==== Add IP Address =================================================================================
+$email_values .= 'ip_address' . ": " . $_SERVER['REMOTE_ADDR'] . "\n" . "<br />";
+$pdf_values .= '<</T(ip_address)/V('. $_SERVER['REMOTE_ADDR'] .')>>';
+
+
+
+// ==== Proccess attached file =================================================================================
 if (!empty($_FILES['file'])) {
 	$file = $_FILES["file"];
 	$name = $file["name"];
