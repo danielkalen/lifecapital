@@ -376,7 +376,8 @@ $.fn.formSubmit = function(type) {
 			// Ajax Call
 			var data = $this.serialize();
 
-			$.post( 'php/'+ type +'.php', data, function(response){
+			// $.post( '/php/'+ type +'.php', data, function(response){
+			$.post( '/'+ type , data, function(response){
 				setTimeout(function(){
 				
 					if ( response.success ) {
