@@ -361,11 +361,11 @@ $.fn.formSubmit = function(type) {
 		}, 400);
 
 		setTimeout(function(){
-			$$('.cta-form-buttons-item-text-icon').velocity({translateX: -75}, {duration:500, easing: 'easeInOutCirc'});
+			$('.cta-form-buttons-item-text-icon').velocity({translateX: -75}, {duration:500, easing: 'easeInOutCirc'});
 			
 			setTimeout(function(){
-				$$('.cta-form-buttons-item-text-hidden').velocity({opacity: 1}, {duration: 300});
-				$$('.cta-form-buttons-item-text-icon').velocity({rotateZ: 720}, {duration:2700, easing: 'linear'});
+				$('.cta-form-buttons-item-text-hidden').velocity({opacity: 1}, {duration: 300});
+				$('.cta-form-buttons-item-text-icon').velocity({rotateZ: 720}, {duration:2700, easing: 'linear'});
 			}, 500);
 
 			// Remove partner fields if there aren't any partners
