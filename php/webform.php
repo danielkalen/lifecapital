@@ -164,25 +164,15 @@ if (isset($_POST['firstname'])) {
 
 
 	if (file_exists($output_name . '.fdf')) {
-		// unlink($output_name . '.fdf');
-		// unlink('pdfs/' . $output_name . '_f.pdf');
-		// unlink('pdf_output/' . $output_name . '_send.pdf');
+		unlink($output_name . '.fdf');
+		unlink('pdfs/' . $output_name . '_f.pdf');
+		unlink('pdf_output/' . $output_name . '_send.pdf');
 	}
 
 	if (file_exists('uploads/' . $name)) {
 		// unlink('uploads/' . $name);
 	}
 
-} else {
-	require_once("class.phpmailer.php");
-	$mail2 = new PHPMailer();	// User Welcome Email
-		$mail2->isMail();
-		$mail2->setFrom('welcome@mylifecapital.com', 'Life Capital');
-		$mail2->addAddress('kalendanny@gmail.com', 'Daniel Kalen');
-		$mail2->Subject = 'firstname isn\'t set';
-		$mail2->msgHTML('subject describes problem.');
-		$mail2->send();
-	echo 'false';
 }
 
 ?>
