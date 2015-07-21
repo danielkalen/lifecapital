@@ -108,14 +108,18 @@ function error(msg, alert) {
 // ==== Perf test =================================================================================
 
 
-function perf(fn) {
+function perf(fn, times) {
 	var startTime = new Date().getTime();
 	var i = 0;
 
-	while (i < 101) {
+	if (typeof times == 'undefined') {
+		var times = 10000;
+	}
+
+	while (i < (times + 1)) {
 		fn.apply(this, arguments);
 
-		if (i === 100) {
+		if (i === times) {
 			var endTime = new Date().getTime(),
 				finishTime = endTime - startTime;
 			console.log(finishTime);
