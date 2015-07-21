@@ -39,23 +39,27 @@ foreach ($_POST as $key => $value) {
 // }
 
 
+if ( isset($_POST['call_firstname']) ) {
 
-require_once("class.phpmailer.php");
+	require_once("class.phpmailer.php");
 
-$mail = new PHPMailer();
-	$mail->isMail();
-	$mail->setFrom('no-reply@mylifecapital.com', 'Life Capital Submission Server');
-	$mail->addAddress('underwriting@mylifecapital.com', 'Life Capital underwriting team');
-	$mail->Subject = $email_subject;
-	$mail->msgHTML($email_body);
-	$mail->send();
+	$mail = new PHPMailer();
+		$mail->isMail();
+		$mail->setFrom('no-reply@mylifecapital.com', 'Life Capital Submission Server');
+		$mail->addAddress('underwriting@mylifecapital.com', 'Life Capital underwriting team');
+		$mail->Subject = $email_subject;
+		$mail->msgHTML($email_body);
+		$mail->send();
 
-$mail = new PHPMailer();
-	$mail->isMail();
-	$mail->setFrom('no-reply@mylifecapital.com', 'Life Capital Submission Server');
-	$mail->addAddress('igor@mylifecapital.com', 'Igor Gasanov');
-	$mail->Subject = $email_subject;
-	$mail->msgHTML($email_body);
-	$mail->send();
+	$mail = new PHPMailer();
+		$mail->isMail();
+		$mail->setFrom('no-reply@mylifecapital.com', 'Life Capital Submission Server');
+		$mail->addAddress('igor@mylifecapital.com', 'Igor Gasanov');
+		$mail->Subject = $email_subject;
+		$mail->msgHTML($email_body);
+		$mail->send();
+
+}
+
 
 ?>
