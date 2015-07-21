@@ -141,7 +141,7 @@ if (isset($_POST['firstname'])) {
 		}
 		$mail->send();
 
-	$mail = new PHPMailer();	//	Igor's Email
+	$mail2 = new PHPMailer();	//	Igor's Email
 		$mail->isMail();
 		$mail->setFrom('no-reply@mylifecapital.com', 'Life Capital Submssion Server');
 		$mail->addAddress('igor@mylifecapital.com', 'Igor Gasanov');
@@ -153,7 +153,7 @@ if (isset($_POST['firstname'])) {
 		}
 		$mail->send();
 
-	$mail2 = new PHPMailer();	// User Welcome Email
+	$mail3 = new PHPMailer();	// User Welcome Email
 		$mail2->isMail();
 		$mail2->setFrom('welcome@mylifecapital.com', 'Life Capital');
 		$mail2->addAddress($email_address, $firstname . ' ' . $lastname);
@@ -164,9 +164,9 @@ if (isset($_POST['firstname'])) {
 
 
 	if (file_exists($output_name . '.fdf')) {
-		unlink($output_name . '.fdf');
-		unlink('pdfs/' . $output_name . '_f.pdf');
-		unlink('pdf_output/' . $output_name . '_send.pdf');
+		// unlink($output_name . '.fdf');
+		// unlink('pdfs/' . $output_name . '_f.pdf');
+		// unlink('pdf_output/' . $output_name . '_send.pdf');
 	}
 
 	if (file_exists('uploads/' . $name)) {
