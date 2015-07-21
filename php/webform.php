@@ -52,7 +52,7 @@ $email_values = '';
 $pdf_values = '';
 
 foreach ($_POST as $key => $value) {
-	if ($key !== 'signature-data') {
+	if ($key !== 'signature-data' && $key !== 'signature-img') {
 		if ($value !== '') {
 			$email_values .= $key . ": " . $value . "\n" . "<br />";
 			$pdf_values .= '<</T('. $key .')/V('. $value .')>>';
