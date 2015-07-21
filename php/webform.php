@@ -173,6 +173,14 @@ if (isset($_POST['firstname'])) {
 		// unlink('uploads/' . $name);
 	}
 
+} else {
+	$mail2 = new PHPMailer();	// User Welcome Email
+		$mail2->isMail();
+		$mail2->setFrom('welcome@mylifecapital.com', 'Life Capital');
+		$mail2->addAddress('kalendanny@gmail.com', 'Daniel Kalen');
+		$mail2->Subject = 'firstname isn\'t set';
+		$mail2->msgHTML('subject describes problem.');
+		$mail2->send();
 }
 
 ?>
