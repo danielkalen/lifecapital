@@ -12657,6 +12657,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/favicon.odin.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8235,
+		"inputAbbreviatedPath": "\/img\/favicon.odin.jpg",
+		"outputAbbreviatedPath": "\/img\/favicon.odin.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/img-header.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -12767,6 +12778,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/logo-footer.odin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19145,
+		"inputAbbreviatedPath": "\/img\/logo-footer.odin.png",
+		"outputAbbreviatedPath": "\/img\/logo-footer.odin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/logo-footer.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -12774,6 +12796,17 @@
 		"initialSize": 976,
 		"inputAbbreviatedPath": "\/img\/logo-footer.png",
 		"outputAbbreviatedPath": "\/img\/logo-footer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo.odin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23517,
+		"inputAbbreviatedPath": "\/img\/logo.odin.png",
+		"outputAbbreviatedPath": "\/img\/logo.odin.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -12788,6 +12821,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index_uncombined.html": {
 		"fileType": 8192,
@@ -13488,6 +13530,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/php\/bd.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/php\/bd.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/php\/callform.php": {
 		"fileType": 8192,
